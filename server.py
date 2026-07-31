@@ -85,7 +85,7 @@ except ModuleNotFoundError:  # pragma: no cover - dependency guidance
     )
 
 sys.path.insert(0, ROOT)
-from src import config, criteria_io, dashboard, sending  # noqa: E402
+from src import config, criteria_io, dashboard, prompts, sending, tools  # noqa: E402
 
 app = FastAPI(title="Wedding Venue Agent — criteria", docs_url=None, redoc_url=None)
 
@@ -634,6 +634,164 @@ def _steps_html(run_id: str, mode: str, running: bool, events: list) -> str:
 <table>{''.join(rows)}</table>
 <p style="margin-top:20px"><a class="back" href="/">&larr; back to the command center</a></p>
 </div></body></html>"""
+
+
+# --- prompts ---------------------------------------------------------------
+# Every prompt the agent sends, read from the LIVE module constants rather than
+# copied into this file. A page that transcribes prompts drifts from the ones
+# actually in use the first time someone edits prompts.py -- and a prompt page
+# that lies is worse than no prompt page. Editing prompts.py changes this page.
+
+PROMPT_STEPS = [
+    {
+        "tag": "search",
+        "title": "Search — find candidate venues",
+        "model": config.SEARCH_MODEL,
+        "text": lambda: tools.SEARCH_PROMPT,
+        "when": "Once per region, through the Claude API's server-side web_search tool.",
+        "returns": "Search result blocks only — the model's prose is discarded.",
+        "why": ("It asks for breadth rather than a shortlist. The model is told to keep "
+                "searching different angles until new ones stop surfacing new venues, and "
+                "explicitly NOT to summarize -- because a summarized answer is the model's "
+                "memory, not search results. Only the structured web_search_tool_result "
+                "blocks are read (tools._results_from), so a venue Claude 'remembers' can "
+                "never enter the pipeline."),
+    },
+    {
+        "tag": "classify",
+        "title": "Classify — is this even a venue?",
+        "model": config.MODEL_CHEAP,
+        "text": lambda: prompts.CLASSIFY,
+        "when": "Once per search result, before any page is fetched.",
+        "returns": '{"classification": "venue" | "listicle" | "vendor" | "irrelevant"}',
+        "why": ("Roughly two thirds of what search returns is a listicle, a planner, or a "
+                "directory. Filtering here -- on the cheap model, from the name and URL "
+                "alone -- means the expensive extraction call is never spent on '17 Best "
+                "Tuscan Venues'. In the live run this dropped 95 of 150 candidates."),
+    },
+    {
+        "tag": "extract",
+        "title": "Extract — turn a page into a record",
+        "model": config.MODEL_WORKHORSE,
+        "text": lambda: prompts.EXTRACT,
+        "when": "Once per venue page, on the full page text.",
+        "returns": "A VenueRecord (schemas.py). Invalid output is retried once, then escalated.",
+        "why": ("This is the prompt that carries the anti-hallucination rule, and the one "
+                "that changed the most. 'request_only' is a first-class correct answer, any "
+                "price must carry a VERBATIM source quote, and the trap list (room counts, "
+                "founding years, nightly rates) exists because a number on the page is not "
+                "automatically the number being asked for. The quote is checked against the "
+                "page character by character afterwards, so a paraphrase fails exactly like "
+                "an invention."),
+    },
+    {
+        "tag": "score",
+        "title": "Score — does it fit the couple's criteria?",
+        "model": config.MODEL_WORKHORSE,
+        "text": lambda: prompts.SCORE,
+        "when": "Once per extracted record.",
+        "returns": "A ScoredVenue: score, confidence, decision in {recommend, reject, escalate}.",
+        "why": ("Note the last paragraph: the prompt tells the model its answer is not final. "
+                "Must-haves are re-checked field by field in scoring.py, the budget "
+                "disqualifier is arithmetic, and confidence is capped by what the page "
+                "actually evidenced. The model is asked to be honest rather than agreeable "
+                "because an inflated confidence is simply overwritten."),
+    },
+    {
+        "tag": "email",
+        "title": "Draft — write the inquiry",
+        "model": config.MODEL_WORKHORSE,
+        "text": lambda: prompts.EMAIL,
+        "when": "Only for venues that survive as 'recommend'.",
+        "returns": "An OutreachEmail, written to runs/<id>/drafts/. NEVER sent.",
+        "why": ("It must reference one real detail from that venue's own page, which is what "
+                "makes it a personalized note rather than a mail merge. It is forbidden from "
+                "asserting anything not in the record. The agent has no send capability at "
+                "all -- a human sends, one venue at a time."),
+    },
+]
+
+# The naive first version, kept verbatim so the change is showable rather than
+# described. This is the single most useful thing on the page.
+PROMPT_V1 = 'EXTRACT_V1 = "Read this page and tell me the venue\'s capacity and price: {page}"'
+
+
+@app.get("/prompts")
+def get_prompts():
+    """Every prompt the agent runs, with what it is for and which model runs it."""
+    from html import escape
+
+    blocks = []
+    for i, step in enumerate(PROMPT_STEPS, 1):
+        blocks.append(f"""
+<section class="p">
+  <div class="ph"><span class="n">{i}</span>
+    <div><h2>{escape(step['title'])}</h2>
+      <div class="meta"><b>model</b> {escape(step['model'])} ·
+        <b>runs</b> {escape(step['when'])}</div>
+      <div class="meta"><b>must return</b> {escape(step['returns'])}</div>
+    </div>
+    <span class="tag">{escape(step['tag'])}</span>
+  </div>
+  <p class="why">{escape(step['why'])}</p>
+  <pre>{escape(step['text']())}</pre>
+</section>""")
+
+    return HTMLResponse(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent prompts — Wedding Venue Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+ :root{{--ink:#0A0E17;--line:rgba(232,195,158,.14);--line2:rgba(255,255,255,.06);
+        --gold:#E8C39E;--gold-dim:#B99873;--teal:#5FB3A3;--amber:#E8B04B;
+        --text:#EDE7DD;--muted:#8C93A3;--muted2:#5C6273}}
+ *{{box-sizing:border-box}}
+ body{{margin:0;background:radial-gradient(1200px 800px at 18% 0%,#131a2b 0,transparent 60%),var(--ink);
+       color:var(--text);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px}}
+ .wrap{{max-width:1000px;margin:0 auto;padding:26px 22px 70px}}
+ h1{{font-family:"Fraunces",serif;font-weight:900;font-size:23px;margin:0 0 3px}}
+ h1 em{{color:var(--gold);font-style:italic;font-weight:600}}
+ .sub{{color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}}
+ a.back{{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line)}}
+ .note{{margin:10px 0 20px;font-size:11.5px;color:var(--muted);line-height:1.65;
+        border-left:2px solid var(--line);padding-left:11px}}
+ .p{{border-top:1px solid var(--line2);padding:18px 0 4px}}
+ .ph{{display:flex;gap:12px;align-items:flex-start}}
+ .ph .n{{font-family:"Fraunces",serif;font-style:italic;color:var(--gold-dim);font-size:17px;
+         min-width:22px;text-align:right}}
+ h2{{font-family:"Fraunces",serif;font-weight:600;font-size:15.5px;margin:0 0 4px;color:var(--text)}}
+ .meta{{color:var(--muted2);font-size:11px;line-height:1.6}}
+ .meta b{{color:var(--muted);font-weight:500}}
+ .tag{{margin-left:auto;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+       border:1px solid var(--line);color:var(--gold-dim);border-radius:999px;padding:2px 9px;
+       white-space:nowrap}}
+ .why{{color:var(--muted);font-size:11.5px;line-height:1.7;margin:10px 0 10px 34px;max-width:74ch}}
+ pre{{background:rgba(255,255,255,.03);border:1px solid var(--line2);border-radius:6px;
+      padding:13px 15px;overflow-x:auto;font-size:11.5px;line-height:1.65;color:var(--text);
+      margin:0 0 4px 34px;white-space:pre-wrap;word-break:break-word}}
+ .v1{{border-left:2px solid var(--amber);padding:11px 14px;margin:6px 0 22px 34px;
+      background:rgba(232,176,75,.05);font-size:11.5px;line-height:1.7;color:var(--muted)}}
+ .v1 code{{color:var(--amber);display:block;margin-bottom:7px;word-break:break-word}}
+</style></head><body><div class="wrap">
+<h1>Agent <em>prompts</em></h1>
+<div class="sub">{len(PROMPT_STEPS)} prompts · read live from src/prompts.py and src/tools.py</div>
+<p><a class="back" href="/">&larr; back to the command center</a></p>
+
+<div class="note">These are the exact strings the agent sends, read from the running
+ modules rather than copied here — editing <code>src/prompts.py</code> changes this page.
+ Every response is parsed into a Pydantic schema; nothing free-form is ever used as data.</div>
+
+<div class="v1"><code>{escape(PROMPT_V1)}</code>
+ The first version of the extraction prompt, kept in <code>src/prompts.py</code> as a
+ comment. It invented prices: asked for a price on a page that only said
+ &ldquo;contact us for a quote&rdquo;, the model supplied a plausible number. Everything
+ in step 3 below — request_only as a valid answer, the verbatim quote requirement,
+ the list of numbers that are <em>not</em> the number being asked for — exists because
+ of that failure.</div>
+{''.join(blocks)}
+<p style="margin-top:26px"><a class="back" href="/">&larr; back to the command center</a></p>
+</div></body></html>""")
 
 
 @app.get("/progress")

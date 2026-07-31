@@ -903,9 +903,12 @@ function renderTelemetry(){
   /* Prefer the phase count over the raw model-call counter -- "11 steps" is the
      workflow, "266 steps" is how hard it worked. Falls back to s.steps when the
      page is opened off disk, where there is no /steps to derive phases from. */
+  /* Both links need a server behind them; opened off disk there is nothing to
+     serve /steps or /prompts, so they render as plain text instead of dead links. */
   const nSteps = s.overview_steps ?? s.steps;
   $("#statusCost").innerHTML = LIVE
     ? `$${cpv}/venue · <a class="steps-link" href="/steps">${nSteps} steps</a>`
+      + ` · <a class="steps-link" href="/prompts">Prompts</a>`
     : `$${cpv}/venue · ${nSteps} steps`;
 
   /* Mock runs replay fixtures; they do not search. Saying so in the header is
