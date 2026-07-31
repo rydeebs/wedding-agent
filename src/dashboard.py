@@ -568,7 +568,12 @@ let renderCriteria;   // defined below; called by renderAll()
          Read-only snapshot. Start the server and open it there to edit and rerun:
          <span style="color:var(--muted)">uvicorn server:app</span> &rarr; http://127.0.0.1:8000</div>`}
       ${banner || ""}`;
-    if (LIVE){
+    /* Must match the condition that RENDERED the buttons. Gating only the
+       markup on !RO() left this wiring reaching for #crit-edit on a read-only
+       page, where it is null -- and the TypeError aborted renderAll() partway,
+       so quadrants 03 and 04 and the header links never rendered at all. The
+       page looked half-built with nothing in the console. */
+    if (LIVE && !RO()){
       $("#crit-edit").onclick = () => renderEdit();
       $("#crit-run").onclick = () => runAgent();
     }
