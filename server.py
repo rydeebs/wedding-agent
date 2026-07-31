@@ -618,11 +618,16 @@ def _steps_html(run_id: str, mode: str, running: bool, events: list) -> str:
             t, _ = STEP_MEANINGS.get(n["event"], (n["event"], ""))
             extra = "; ".join(n["flags"])[:200] if n.get("flags") else n.get("tag", "")
             det.append(f'<span class="note">{escape(t)}{": " + escape(extra) if extra else ""}</span>')
+        # Built outside the f-string on purpose. Nesting a same-quoted
+        # expression inside an f-string (f'... {row['calls']} ...') is PEP 701
+        # syntax and only parses on Python 3.12+. It ran fine locally and was a
+        # hard SyntaxError on the deploy target, which is the worst place to
+        # find out. Kept 3.11-compatible; tests/test_server.py enforces it.
+        calls_note = f" ({row['calls']} model calls)" if row["calls"] else ""
         rows.append(
             f'<tr><td class="n">{out.get("step","")}</td><td class="t">{escape(out.get("ts","")[11:19])}</td>'
             f'<td><div class="ttl">{head}</div>'
-            f'<div class="why">{escape(title)} — {escape(why)}'
-            f'{f" ({row['calls']} model calls)" if row["calls"] else ""}</div>'
+            f'<div class="why">{escape(title)} — {escape(why)}{calls_note}</div>'
             f'<div class="det">{" · ".join(det)}</div></td></tr>')
 
     ov = overview(events)

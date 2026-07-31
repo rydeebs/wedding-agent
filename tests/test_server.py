@@ -22,8 +22,10 @@ from __future__ import annotations
 
 import json
 import os
+import pathlib
 import shutil
 import socket
+import subprocess
 import sys
 import tempfile
 
@@ -304,6 +306,35 @@ def main():
 
     os.environ.pop("DEMO_READONLY", None)
     importlib.reload(server)
+
+    # --- syntax floor -----------------------------------------------------
+    # A nested same-quoted expression inside an f-string is PEP 701 and parses
+    # only on 3.12+. It ran locally and crash-looped the deploy container on
+    # 3.11 with a SyntaxError -- the whole app down, found in production logs.
+    # Compiling against the OLDEST interpreter we claim to support catches that
+    # class of bug here instead. ast.parse(feature_version=...) does NOT catch
+    # it (the f-string tokenizer is not downgraded), so this shells out to a
+    # real interpreter and skips cleanly when that version is not installed.
+    floor = "3.11"
+    interp = shutil.which(f"python{floor}")
+    if interp:
+        srcs = [str(p) for p in pathlib.Path(ROOT).rglob("*.py")
+                if not any(x in p.parts for x in (".venv", "runs", "__pycache__", "out"))]
+        proc = subprocess.run(
+            [interp, "-c",
+             "import sys,py_compile,tempfile\n"
+             "bad=[]\n"
+             "for f in sys.argv[1:]:\n"
+             "    try: py_compile.compile(f, cfile=tempfile.mktemp(), doraise=True)\n"
+             "    except py_compile.PyCompileError as e: bad.append(f'{f}: {e}')\n"
+             "print('\\n'.join(bad))\n", *srcs],
+            capture_output=True, text=True,
+        )
+        check(f"all sources parse on Python {floor} (deploy floor)",
+              proc.returncode == 0 and not proc.stdout.strip(),
+              proc.stdout.strip()[:200] or proc.stderr.strip()[:200])
+    else:
+        print(f"  SKIP  python{floor} not installed — cannot check the deploy syntax floor")
 
     print(f"\n{len(PASS)} passed, {len(FAIL)} failed")
     if FAIL:
