@@ -1,0 +1,38 @@
+# --- secrets: never commit these -------------------------------------------
+# .env holds API keys for real mode. .env.example (blank placeholders) IS
+# committed, and is the file to copy from.
+.env
+.env.*
+!.env.example
+
+# Gmail OAuth. credentials.json is the OAuth client downloaded from Google
+# Cloud Console; token.json is the authorized token written by
+# `python -m src.sending --authorize`. Both are secrets. The code reads them
+# from these paths (override with GMAIL_CREDENTIALS_PATH / GMAIL_TOKEN_PATH)
+# and neither is ever written anywhere else.
+credentials.json
+token.json
+*.credentials.json
+*token.json
+
+# --- run artifacts and generated output -------------------------------------
+runs/
+out/
+
+# Who has already been emailed. Not a secret, but it is real correspondence
+# history with real venue addresses -- personal data, not source.
+sent_log.json
+
+# criteria.json is committed (it is the demo input); its rolling backup is not.
+criteria.json.bak
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# --- os ---------------------------------------------------------------------
+.DS_Store

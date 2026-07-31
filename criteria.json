@@ -1,0 +1,20 @@
+{
+  "couple": "Ryan's brother + fiancee",
+  "regions": [
+    "Italy",
+    "Greece",
+    "Portugal"
+  ],
+  "guest_count": 105,
+  "budget_ceiling_usd": 80000,
+  "date_window": "May-Aug 2027",
+  "must_haves": [
+    "on-site lodging for guests",
+    "capacity for at least 85",
+    "indoor backup for weather"
+  ],
+  "nice_to_haves": [
+    "beachfront or dramatic natural setting"
+  ],
+  "vibe": "intimate, natural, not a big-box resort ballroom, coastal"
+}

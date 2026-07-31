@@ -1,0 +1,148 @@
+{
+  "notes": "Hand-labeled expected outcomes. Categories mirror the FDE guide: normal, edge, incomplete-information, high-risk/ambiguous. 'expect_decision' of 'escalate' means the agent must NOT auto-answer -- a human should review. 'expect_pricing' guards the anti-hallucination behavior: request-only venues must never be assigned a number.",
+  "cases": [
+    {
+      "url": "https://example.com/casa-jaguar",
+      "category": "normal",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "why": "Meets every must-have; page says contact for quote, so pricing must be request_only, not a made-up number."
+    },
+    {
+      "url": "https://example.com/hotel-esencia",
+      "category": "normal-listed-price",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "listed",
+      "why": "Has a genuinely listed starting price under budget; pricing may be 'listed' but only with a source quote."
+    },
+    {
+      "url": "https://example.com/listicle-17best",
+      "category": "high-risk-noise",
+      "expect_classification": "listicle",
+      "expect_decision": "filtered",
+      "expect_pricing": null,
+      "why": "A roundup article, not a venue. Must be filtered before extraction, or it pollutes the shortlist."
+    },
+    {
+      "url": "https://example.com/villa-lodging-unknown",
+      "category": "incomplete-information",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": "unknown",
+      "why": "Capacity and backup not stated; agent cannot confirm the 85-guest must-have, so it must escalate rather than recommend."
+    },
+    {
+      "url": "https://example.com/cabo-cliff-estate",
+      "category": "normal",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "why": "Meets must-haves; quote by request."
+    },
+    {
+      "url": "https://example.com/over-budget-resort",
+      "category": "high-risk-budget",
+      "expect_classification": "venue",
+      "expect_decision": "reject",
+      "expect_pricing": "listed",
+      "why": "Listed package 145000 far exceeds the 40000 ceiling; hard budget disqualifier must fire regardless of model enthusiasm."
+    },
+    {
+      "url": "https://example.com/no-capacity-hacienda",
+      "category": "incomplete-information",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": "unknown",
+      "why": "No capacity, lodging, or backup on the page. Insufficient info -> escalate, not guess."
+    },
+    {
+      "url": "https://example.com/sedona-sky-ranch",
+      "category": "normal",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "why": "Meets must-haves; quote on request."
+    },
+    {
+      "url": "https://example.com/casa-numeros",
+      "category": "high-risk-hallucination",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": "unknown",
+      "expect_capacity": null,
+      "expect_grounding_flagged": true,
+      "why": "A page made of numbers that are not wedding numbers: 48 casitas, founded 1918, 3,500 sq ft of terrace. The extractor reads 48 as guest capacity and 3,500 as a price, with a quote that IS verbatim on the page. Both must be stripped -- 48 is not near a guest word, and the quote states no money and no event -- leaving capacity null and pricing unknown, which forces an escalation. The number being real on the page is exactly what makes this hard."
+    },
+    {
+      "url": "https://example.com/finca-las-palmas",
+      "category": "high-risk-hallucination",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": "request_only",
+      "expect_grounding_flagged": true,
+      "why": "Fabricated evidence: the extractor invents 'Wedding packages begin at 28,000 USD', a fluent sentence that appears nowhere on the page. The page says pricing is on request. This venue meets every must-have, so it would otherwise be recommended -- it must escalate anyway, because an extractor caught inventing a quote is not trusted on the rest of the record."
+    },
+    {
+      "url": "https://example.com/mirador-del-mar",
+      "category": "high-risk-hallucination",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": "request_only",
+      "expect_grounding_flagged": true,
+      "why": "Misattributed evidence, the subtlest case: '$450 per night' is a real, published, verbatim price on the page -- it is just not a wedding price. Recording it would put a $450 wedding on the shortlist. The quote must be rejected for being a nightly lodging rate with no event context, and pricing falls back to request_only."
+    },
+    {
+      "url": "https://example.com/ghost-villa",
+      "category": "failure-malformed-page",
+      "expect_classification": "venue",
+      "expect_decision": "escalate",
+      "expect_pricing": null,
+      "why": "A 200 OK that is an unrendered app shell -- the common failure for venues on JS site builders, and NOT the same as a dead link. Extracting from it would produce an all-null record indistinguishable from 'the page was silent', quietly converting a fetch failure into an incomplete-information verdict. Must be caught before extraction (so no workhorse call is spent) and escalated as a page problem."
+    },
+    {
+      "url": "https://casajaguar.example/weddings",
+      "category": "failure-duplicate-venue",
+      "expect_classification": "venue",
+      "expect_decision": "duplicate",
+      "expect_pricing": null,
+      "why": "Casa Jaguar already evaluated under Tulum, resurfacing in the Cabo search on its own domain as 'Casa Jaguar Tulum (Official Site)'. Different host and path, so only name canonicalization can catch it. Must be collapsed before classify -- otherwise the couple sees it twice, it is scored twice, and it may be drafted two different emails."
+    },
+    {
+      "url": "https://example.com/villa-cielo",
+      "category": "normal-country-region",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "why": "Found under the country-level region 'Italy' rather than a city. Country search must behave exactly like city search: same extraction, same must-have checks, same escalation rules. Meets every must-have with pricing by request."
+    },
+    {
+      "url": "https://example.com/borgo-antico",
+      "category": "normal-foreign-currency",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "expect_grounding_flagged": true,
+      "why": "A real, published, verbatim price -- in EUR. The number must NOT reach price_low_usd: the field is USD and 28,000 EUR is not 28,000 dollars, so it is stripped and pricing falls back to request_only. That part is unchanged and is what this case guards.\n\nWhat changed: a foreign-currency price no longer blocks a recommendation. The other grounding failures -- a fabricated quote, a nightly room rate sold as a wedding price, a capacity read off a room count -- mean the extractor asserted something the page does not support, so the whole record is suspect and the venue escalates. A EUR price is the opposite: the extractor read the page correctly and we have nowhere to put the answer. Blaming it for our own missing currency field made every European venue with a published price escalate, which on a European search is most of them. The venue meets every must-have and its price is now 'by request' -- exactly how every quote-on-request venue is treated, and those are recommended routinely. Confidence still takes a 0.10 penalty for the unusable price."
+    },
+    {
+      "url": "https://example.com/quinta-do-mar",
+      "category": "normal-country-region",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "why": "Country-level 'Portugal' search. Contact is a web form, so the shortlist offers no send button for it -- the send path requires an extracted email address."
+    },
+    {
+      "url": "https://example.com/villa-stretta",
+      "category": "confidence calibration",
+      "expect_classification": "venue",
+      "expect_decision": "recommend",
+      "expect_pricing": "request_only",
+      "expect_capacity": 90,
+      "expect_max_confidence": 0.9,
+      "why": "Clears every must-have, so it belongs on the shortlist -- but its stated capacity of 90 covers the required 85 by only 1.06x, and a seated-vs-standing or largest-of-several-spaces number would flip that verdict. The model self-reports 0.92; the evidence ceiling must cap it at 0.90. Without the capacity-margin penalty nothing else in scoring.py can lower a RECOMMENDED venue's confidence -- every other penalty keys on something a recommendation cannot have -- so the whole shortlist reports the model's round number and the confidence column carries no information at all."
+    }
+  ]
+}

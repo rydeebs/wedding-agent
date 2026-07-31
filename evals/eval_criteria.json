@@ -1,0 +1,24 @@
+{
+  "couple": "Ryan's brother + fiancee",
+  "regions": [
+    "Tulum, Mexico",
+    "Cabo San Lucas, Mexico",
+    "Sedona, Arizona",
+    "Italy",
+    "Portugal"
+  ],
+  "guest_count": 85,
+  "budget_ceiling_usd": 40000,
+  "date_window": "Oct-Nov 2026",
+  "must_haves": [
+    "on-site lodging for guests",
+    "capacity for at least 85",
+    "indoor backup for weather"
+  ],
+  "nice_to_haves": [
+    "beachfront or dramatic natural setting",
+    "in-house catering",
+    "getting-ready suite"
+  ],
+  "vibe": "intimate, natural, not a big-box resort ballroom"
+}

@@ -1,0 +1,261 @@
+{
+  "classify:casa-jaguar": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 320,
+    "out": 8
+  },
+  "classify:hotel-esencia": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 315,
+    "out": 8
+  },
+  "classify:listicle-17best": {
+    "text": "{\"classification\": \"listicle\"}",
+    "in": 330,
+    "out": 8
+  },
+  "classify:villa-lodging-unknown": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 300,
+    "out": 8
+  },
+  "classify:cabo-cliff-estate": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 322,
+    "out": 8
+  },
+  "classify:over-budget-resort": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 340,
+    "out": 8
+  },
+  "classify:no-capacity-hacienda": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 305,
+    "out": 8
+  },
+  "classify:sedona-sky-ranch": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 318,
+    "out": 8
+  },
+  "classify:casa-numeros": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 311,
+    "out": 8
+  },
+  "classify:finca-las-palmas": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 326,
+    "out": 8
+  },
+  "classify:mirador-del-mar": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 324,
+    "out": 8
+  },
+  "classify:ghost-villa": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 309,
+    "out": 8
+  },
+  "extract:casa-jaguar": {
+    "text": "{\"name\": \"Casa Jaguar Tulum\", \"url\": \"https://example.com/casa-jaguar\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": 120, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"jungle-and-beach\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"email\", \"contact_value\": \"weddings@casajaguar.example\", \"standout_detail\": \"14 on-site cabanas and a covered palapa for rain backup\"}",
+    "in": 1200,
+    "out": 180
+  },
+  "extract:hotel-esencia": [
+    {
+      "text": "{\"name\": \"Hotel Esencia\", \"url\": \"https://example.com/hotel-esencia\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": 90, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"beachfront estate\", \"pricing_signal\": \"listed\", \"price_low_usd\": 32000, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": \"29 on-property suites and an indoor ballroom backup\"}",
+      "in": 1180,
+      "out": 175
+    },
+    {
+      "text": "{\"name\": \"Hotel Esencia\", \"url\": \"https://example.com/hotel-esencia\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": 90, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"beachfront estate\", \"pricing_signal\": \"listed\", \"price_low_usd\": 32000, \"price_high_usd\": null, \"price_source_quote\": \"Wedding collections start at 32,000 USD for up to 80 guests\", \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": \"29 on-property suites and an indoor ballroom backup\"}",
+      "in": 1250,
+      "out": 185
+    }
+  ],
+  "extract:villa-lodging-unknown": {
+    "text": "{\"name\": \"Villa Lodging Tulum\", \"url\": \"https://example.com/villa-lodging-unknown\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": null, \"has_onsite_lodging\": true, \"has_indoor_backup\": null, \"setting\": null, \"pricing_signal\": \"unknown\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": null}",
+    "in": 900,
+    "out": 120
+  },
+  "extract:cabo-cliff-estate": {
+    "text": "{\"name\": \"Cabo Cliff Estate\", \"url\": \"https://example.com/cabo-cliff-estate\", \"region\": \"Cabo San Lucas, Mexico\", \"classification\": \"venue\", \"capacity_max\": 100, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"clifftop\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"email\", \"contact_value\": \"events@cabocliff.example\", \"standout_detail\": \"clifftop views over the Sea of Cortez with an indoor hall backup\"}",
+    "in": 1150,
+    "out": 175
+  },
+  "extract:over-budget-resort": {
+    "text": "{\"name\": \"Grand Cabo Mega Resort & Convention Center\", \"url\": \"https://example.com/over-budget-resort\", \"region\": \"Cabo San Lucas, Mexico\", \"classification\": \"venue\", \"capacity_max\": 400, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"all-inclusive resort\", \"pricing_signal\": \"listed\", \"price_low_usd\": 145000, \"price_high_usd\": null, \"price_source_quote\": \"our signature all-inclusive wedding package starts at 145,000 USD\", \"contact_method\": \"none\", \"contact_value\": null, \"standout_detail\": \"convention ballrooms for up to 400 guests\"}",
+    "in": 1210,
+    "out": 180
+  },
+  "extract:no-capacity-hacienda": {
+    "text": "{\"name\": \"Hacienda del Mar\", \"url\": \"https://example.com/no-capacity-hacienda\", \"region\": \"Cabo San Lucas, Mexico\", \"classification\": \"venue\", \"capacity_max\": null, \"has_onsite_lodging\": null, \"has_indoor_backup\": null, \"setting\": \"historic hacienda\", \"pricing_signal\": \"unknown\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": null}",
+    "in": 880,
+    "out": 115
+  },
+  "extract:sedona-sky-ranch": {
+    "text": "{\"name\": \"Sedona Sky Ranch\", \"url\": \"https://example.com/sedona-sky-ranch\", \"region\": \"Sedona, Arizona\", \"classification\": \"venue\", \"capacity_max\": 110, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"red-rock ranch\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": \"on-site casitas for 36 and a restored barn for indoor backup\"}",
+    "in": 1170,
+    "out": 175
+  },
+  "_comment_traps": "The three extract fixtures below are deliberately WRONG in the way real extractions go wrong. They pass the schema (well-formed, quote present) and are caught by grounding.py instead. casa-numeros misreads a room count as capacity and a square footage as a price; finca-las-palmas invents a fluent quote that is nowhere on the page; mirador-del-mar quotes a real, verbatim, on-page price that is a nightly room rate, not a wedding price. Their score fixtures are deliberately OVERCONFIDENT so calibration has something to correct.",
+  "extract:casa-numeros": {
+    "text": "{\"name\": \"Casa de los Numeros\", \"url\": \"https://example.com/casa-numeros\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": 48, \"has_onsite_lodging\": true, \"has_indoor_backup\": null, \"setting\": \"restored estate in a palm grove\", \"pricing_signal\": \"listed\", \"price_low_usd\": 3500, \"price_high_usd\": null, \"price_source_quote\": \"3,500 square feet of covered terrace\", \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": \"original stone arches over the terrace\"}",
+    "in": 1130,
+    "out": 170
+  },
+  "extract:finca-las-palmas": {
+    "text": "{\"name\": \"Finca Las Palmas\", \"url\": \"https://example.com/finca-las-palmas\", \"region\": \"Tulum, Mexico\", \"classification\": \"venue\", \"capacity_max\": 130, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"flower farm\", \"pricing_signal\": \"listed\", \"price_low_usd\": 28000, \"price_high_usd\": null, \"price_source_quote\": \"Wedding packages begin at 28,000 USD for up to 100 guests\", \"contact_method\": \"email\", \"contact_value\": \"events@fincalaspalmas.example\", \"standout_detail\": \"a restored greenhouse used as the rain backup\"}",
+    "in": 1160,
+    "out": 178
+  },
+  "extract:mirador-del-mar": {
+    "text": "{\"name\": \"Mirador del Mar\", \"url\": \"https://example.com/mirador-del-mar\", \"region\": \"Cabo San Lucas, Mexico\", \"classification\": \"venue\", \"capacity_max\": 95, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"cliffside\", \"pricing_signal\": \"listed\", \"price_low_usd\": 450, \"price_high_usd\": null, \"price_source_quote\": \"Room rates from $450 per night, double occupancy.\", \"contact_method\": \"none\", \"contact_value\": null, \"standout_detail\": \"oceanfront terrace with an indoor salon backup\"}",
+    "in": 1175,
+    "out": 176
+  },
+  "score:casa-numeros": {
+    "text": "{\"score\": 0.78, \"confidence\": 0.92, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Charming restored estate with on-site casitas, and the terrace price looks well under budget. Strong fit for the intimate, natural vibe.\", \"decision\": \"recommend\"}",
+    "in": 690,
+    "out": 92
+  },
+  "score:finca-las-palmas": {
+    "text": "{\"score\": 0.91, \"confidence\": 0.93, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Meadow seats 130, garden suites on site, greenhouse rain backup, and packages start at 28,000 which is under the ceiling. Excellent fit.\", \"decision\": \"recommend\"}",
+    "in": 715,
+    "out": 96
+  },
+  "score:mirador-del-mar": {
+    "text": "{\"score\": 0.86, \"confidence\": 0.9, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Terrace holds 95, rooms on property, indoor salon backup, and at 450 it is dramatically under the 40000 budget.\", \"decision\": \"recommend\"}",
+    "in": 708,
+    "out": 94
+  },
+  "score:casa-jaguar": {
+    "text": "{\"score\": 0.93, \"confidence\": 0.9, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Meets all must-haves: capacity 120 >= 85, on-site lodging, indoor palapa backup. Jungle-and-beach setting fits the intimate natural vibe.\", \"decision\": \"recommend\"}",
+    "in": 700,
+    "out": 90
+  },
+  "score:hotel-esencia": {
+    "text": "{\"score\": 0.82, \"confidence\": 0.88, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Capacity 90 >= 85, on-site suites, indoor ballroom backup. Listed price 32000 is under the 40000 ceiling. Slightly less 'natural' than a jungle venue.\", \"decision\": \"recommend\"}",
+    "in": 720,
+    "out": 95
+  },
+  "score:villa-lodging-unknown": {
+    "text": "{\"score\": 0.4, \"confidence\": 0.45, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Capacity not stated, backup unknown. Cannot confirm the 85-guest must-have from the page. Needs a human to confirm details before recommending.\", \"decision\": \"escalate\"}",
+    "in": 680,
+    "out": 95
+  },
+  "score:cabo-cliff-estate": {
+    "text": "{\"score\": 0.9, \"confidence\": 0.89, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Capacity 100 >= 85, on-site villa lodging, indoor hall backup. Clifftop setting fits the dramatic natural vibe.\", \"decision\": \"recommend\"}",
+    "in": 705,
+    "out": 90
+  },
+  "score:over-budget-resort": {
+    "text": "{\"score\": 0.15, \"confidence\": 0.95, \"disqualified\": true, \"disqualify_reason\": \"Listed package 145000 exceeds the 40000 budget ceiling by >3x; 400-guest convention resort also conflicts with the intimate vibe.\", \"rationale\": \"Hard budget disqualifier applies.\", \"decision\": \"reject\"}",
+    "in": 730,
+    "out": 100
+  },
+  "score:no-capacity-hacienda": {
+    "text": "{\"score\": 0.35, \"confidence\": 0.4, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Page states no capacity, lodging, or backup. Insufficient information to evaluate against must-haves. Escalate for a human to contact the venue.\", \"decision\": \"escalate\"}",
+    "in": 675,
+    "out": 95
+  },
+  "score:sedona-sky-ranch": {
+    "text": "{\"score\": 0.88, \"confidence\": 0.87, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Capacity 110 >= 85, on-site casitas, restored barn indoor backup. Red-rock ranch fits the natural, non-resort vibe.\", \"decision\": \"recommend\"}",
+    "in": 710,
+    "out": 92
+  },
+  "email:casa-jaguar": {
+    "text": "{\"venue_name\": \"Casa Jaguar Tulum\", \"to\": \"weddings@casajaguar.example\", \"subject\": \"Wedding inquiry - 85 guests, Oct-Nov 2026\", \"body\": \"Hi Casa Jaguar team,\\n\\nMy brother and his fiancee are planning an intimate wedding for about 85 guests in Oct-Nov 2026, and your jungle-and-beach setting with the on-site cabanas is exactly the feel they are after. Could you share availability for that window and an all-in quote for roughly 85 guests? We would also love to confirm the covered palapa works as a rain backup.\\n\\nThank you!\\nRyan\", \"references_detail\": \"on-site cabanas and covered palapa backup\"}",
+    "in": 900,
+    "out": 210
+  },
+  "email:hotel-esencia": {
+    "text": "{\"venue_name\": \"Hotel Esencia\", \"to\": null, \"subject\": \"Wedding inquiry - 85 guests, Oct-Nov 2026\", \"body\": \"Hi Hotel Esencia team,\\n\\nWe are planning an intimate beachfront wedding for about 85 guests in Oct-Nov 2026. Your 29 on-property suites would be perfect for keeping guests together. Your published collections mention starting around 32,000 USD for up to 80 guests; could you confirm pricing for 85 and availability in that window?\\n\\nThank you!\\nRyan\", \"references_detail\": \"29 on-property suites and published starting collection\"}",
+    "in": 920,
+    "out": 215
+  },
+  "email:cabo-cliff-estate": {
+    "text": "{\"venue_name\": \"Cabo Cliff Estate\", \"to\": \"events@cabocliff.example\", \"subject\": \"Wedding inquiry - 85 guests, Oct-Nov 2026\", \"body\": \"Hi Cabo Cliff Estate team,\\n\\nMy brother and his fiancee are planning an intimate wedding for around 85 guests in Oct-Nov 2026, and your clifftop views over the Sea of Cortez are stunning. Could you share availability for that window, an all-in quote for ~85 guests, and confirm the indoor hall as a weather backup?\\n\\nThank you!\\nRyan\", \"references_detail\": \"clifftop views and indoor hall backup\"}",
+    "in": 905,
+    "out": 208
+  },
+  "email:sedona-sky-ranch": {
+    "text": "{\"venue_name\": \"Sedona Sky Ranch\", \"to\": null, \"subject\": \"Wedding inquiry - 85 guests, Oct-Nov 2026\", \"body\": \"Hi Sedona Sky Ranch team,\\n\\nWe are planning an intimate red-rock wedding for about 85 guests in Oct-Nov 2026. The on-site casitas and the restored barn as an indoor backup are exactly what we are looking for. Could you share availability for that window and a quote for ~85 guests?\\n\\nThank you!\\nRyan\", \"references_detail\": \"on-site casitas and restored barn backup\"}",
+    "in": 910,
+    "out": 205
+  },
+  "_comment_countries": "Country-level regions ('Italy', 'Portugal') alongside 'City, Country'. borgo-antico is the labeled case for a EUR-quoted price: real money, real quote, but not a currency that can go in price_low_usd, so grounding strips it and the venue escalates for a human to convert rather than recording 28,000 EUR as 28,000 USD.",
+  "classify:villa-cielo": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 318,
+    "out": 8
+  },
+  "classify:borgo-antico": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 322,
+    "out": 8
+  },
+  "classify:quinta-do-mar": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 316,
+    "out": 8
+  },
+  "extract:villa-cielo": {
+    "text": "{\"capacity_max\": 100, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"cliffside villa above the sea\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"email\", \"contact_value\": \"eventi@villacielo.example\", \"standout_detail\": \"a vaulted stone cellar used as the indoor space\", \"classification\": \"venue\", \"name\": \"Villa Cielo\", \"url\": \"https://example.com/villa-cielo\", \"region\": \"Italy\"}",
+    "in": 1165,
+    "out": 176
+  },
+  "extract:borgo-antico": {
+    "text": "{\"capacity_max\": 140, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"medieval hamlet in the Tuscan hills\", \"pricing_signal\": \"listed\", \"price_low_usd\": 28000, \"price_high_usd\": null, \"price_source_quote\": \"Wedding packages start at 28,000 EUR for up to 100 guests\", \"contact_method\": \"none\", \"contact_value\": null, \"standout_detail\": \"a frescoed sala used as the rain alternative\", \"classification\": \"venue\", \"name\": \"Borgo Antico\", \"url\": \"https://example.com/borgo-antico\", \"region\": \"Italy\"}",
+    "in": 1190,
+    "out": 182
+  },
+  "extract:quinta-do-mar": {
+    "text": "{\"capacity_max\": 120, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"clifftop estate on the Algarve\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"form\", \"contact_value\": null, \"standout_detail\": \"nine guest cottages and a converted stone barn\", \"classification\": \"venue\", \"name\": \"Quinta do Mar\", \"url\": \"https://example.com/quinta-do-mar\", \"region\": \"Portugal\"}",
+    "in": 1158,
+    "out": 174
+  },
+  "score:villa-cielo": {
+    "text": "{\"score\": 0.91, \"confidence\": 0.89, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Capacity 100 >= 85, twelve guest rooms on site, vaulted cellar as indoor backup. Cliffside Amalfi setting fits the intimate natural vibe.\", \"decision\": \"recommend\"}",
+    "in": 710,
+    "out": 94
+  },
+  "score:borgo-antico": {
+    "text": "{\"score\": 0.88, \"confidence\": 0.9, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Courtyard seats 140, eighteen rooms on site, frescoed sala for rain. Packages from 28,000 look under the ceiling.\", \"decision\": \"recommend\"}",
+    "in": 710,
+    "out": 94
+  },
+  "score:quinta-do-mar": {
+    "text": "{\"score\": 0.89, \"confidence\": 0.88, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Clifftop lawn holds 120 >= 85, nine cottages on the estate, converted barn as the indoor option. Algarve coast fits the natural, non-resort vibe.\", \"decision\": \"recommend\"}",
+    "in": 710,
+    "out": 94
+  },
+  "email:villa-cielo": {
+    "text": "{\"venue_name\": \"Villa Cielo\", \"to\": \"eventi@villacielo.example\", \"subject\": \"Wedding inquiry - 85 guests, Oct-Nov 2026\", \"body\": \"Hi Villa Cielo team,\\n\\nMy brother and his fiancee are planning an intimate wedding for about 85 guests in Oct-Nov 2026, and your sea terrace above the Amalfi Coast is exactly the setting they had in mind. Could you share availability in that window and an all-in quote for roughly 85 guests? We would also love to confirm the vaulted cellar works as a weather backup.\\n\\nThank you!\\nRyan\", \"references_detail\": \"the sea terrace and vaulted stone cellar\"}",
+    "in": 915,
+    "out": 212
+  },
+  "classify:villa-stretta": {
+    "text": "{\"classification\": \"venue\"}",
+    "in": 300,
+    "out": 8
+  },
+  "extract:villa-stretta": {
+    "text": "{\"name\": \"Villa Stretta\", \"url\": \"https://example.com/villa-stretta\", \"region\": \"Italy\", \"classification\": \"venue\", \"capacity_max\": 90, \"has_onsite_lodging\": true, \"has_indoor_backup\": true, \"setting\": \"restored lakeside villa in Piedmont\", \"pricing_signal\": \"request_only\", \"price_low_usd\": null, \"price_high_usd\": null, \"price_source_quote\": null, \"contact_method\": \"email\", \"contact_value\": \"events@villastretta.example\", \"standout_detail\": \"the vaulted cellar that seats the full party if it rains\"}",
+    "in": 1400,
+    "out": 190
+  },
+  "score:villa-stretta": {
+    "text": "{\"score\": 0.88, \"confidence\": 0.92, \"disqualified\": false, \"disqualify_reason\": null, \"rationale\": \"Terrace seats 90, twelve rooms on site, vaulted cellar as the rain plan. Meets every must-have.\", \"decision\": \"recommend\"}",
+    "in": 700,
+    "out": 120
+  },
+  "email:villa-stretta": {
+    "text": "{\"venue_name\": \"Villa Stretta\", \"to\": \"events@villastretta.example\", \"subject\": \"Wedding enquiry \\u2014 Oct/Nov 2026, 85 guests\", \"body\": \"Hello,\\n\\nWe are planning an intimate wedding for 85 guests in Oct-Nov 2026 and the vaulted cellar you keep as a rain plan is exactly the reassurance we were hoping for.\\n\\nCould you let us know your availability in that window, and an all-in quote for 85 guests?\\n\\nThank you,\\nRyan\", \"references_detail\": \"the vaulted cellar that seats the full party if it rains\"}",
+    "in": 800,
+    "out": 150
+  }
+}

@@ -1,0 +1,13 @@
+pydantic>=2.0
+requests>=2.31
+anthropic>=0.40
+
+# Optional -- only for the command-center server (server.py). The agent, mock
+# mode, and the eval suite all run without these.
+fastapi>=0.110
+uvicorn>=0.27
+
+# Optional -- only to actually SEND an inquiry through Gmail in real mode.
+# Mock mode writes the send to runs/<id>/drafts/ and never imports these.
+google-api-python-client>=2.100
+google-auth-oauthlib>=1.2

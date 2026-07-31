@@ -1,0 +1,97 @@
+{
+  "Tulum, Mexico": [
+    {
+      "name": "Casa Jaguar Tulum",
+      "url": "https://example.com/casa-jaguar",
+      "snippet": "Jungle-and-beach wedding venue in Tulum with on-site cabanas."
+    },
+    {
+      "name": "Hotel Esencia",
+      "url": "https://example.com/hotel-esencia",
+      "snippet": "Boutique beachfront estate, weddings by request."
+    },
+    {
+      "name": "17 Best Tulum Wedding Venues (2026 Guide)",
+      "url": "https://example.com/listicle-17best",
+      "snippet": "Our roundup of the top wedding venues in Tulum this year."
+    },
+    {
+      "name": "Villa Lodging Tulum",
+      "url": "https://example.com/villa-lodging-unknown",
+      "snippet": "Private villa events. Details vary."
+    },
+    {
+      "name": "Casa de los Numeros",
+      "url": "https://example.com/casa-numeros",
+      "snippet": "Restored estate near Tulum with casitas and a covered terrace."
+    },
+    {
+      "name": "Finca Las Palmas",
+      "url": "https://example.com/finca-las-palmas",
+      "snippet": "Flower farm and event finca with a ceremony meadow and garden suites."
+    }
+  ],
+  "Cabo San Lucas, Mexico": [
+    {
+      "name": "Cabo Cliff Estate",
+      "url": "https://example.com/cabo-cliff-estate",
+      "snippet": "Clifftop estate overlooking the Sea of Cortez."
+    },
+    {
+      "name": "Grand Cabo Mega Resort & Convention Center",
+      "url": "https://example.com/over-budget-resort",
+      "snippet": "Luxury all-inclusive resort weddings from premium packages."
+    },
+    {
+      "name": "Hacienda del Mar",
+      "url": "https://example.com/no-capacity-hacienda",
+      "snippet": "Historic hacienda venue for celebrations."
+    },
+    {
+      "name": "Mirador del Mar",
+      "url": "https://example.com/mirador-del-mar",
+      "snippet": "Cliffside boutique hotel with an oceanfront ceremony terrace."
+    },
+    {
+      "name": "Casa Jaguar Tulum (Official Site)",
+      "url": "https://casajaguar.example/weddings",
+      "snippet": "The official site for Casa Jaguar. Jungle-and-beach weddings."
+    }
+  ],
+  "Sedona, Arizona": [
+    {
+      "name": "Sedona Sky Ranch",
+      "url": "https://example.com/sedona-sky-ranch",
+      "snippet": "Red-rock ranch venue with on-site casitas and indoor barn backup."
+    },
+    {
+      "name": "Ghost Villa Sedona",
+      "url": "https://example.com/ghost-villa",
+      "snippet": "Private villa weddings among the red rocks."
+    }
+  ],
+  "Italy": [
+    {
+      "name": "Villa Cielo",
+      "url": "https://example.com/villa-cielo",
+      "snippet": "Cliffside villa above the Amalfi Coast with sea-terrace ceremonies."
+    },
+    {
+      "name": "Borgo Antico",
+      "url": "https://example.com/borgo-antico",
+      "snippet": "Restored medieval hamlet in the Tuscan hills for weddings."
+    },
+    {
+      "name": "Villa Stretta",
+      "url": "https://example.com/villa-stretta",
+      "snippet": "Lakeside villa for intimate weddings in Piedmont."
+    }
+  ],
+  "Portugal": [
+    {
+      "name": "Quinta do Mar",
+      "url": "https://example.com/quinta-do-mar",
+      "snippet": "Algarve estate with clifftop ceremony lawn and guest cottages."
+    }
+  ]
+}
