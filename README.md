@@ -389,17 +389,5 @@ criteria.json ─► [search] ─► [dedupe: seen this venue already?]
   pipeline; decomposing it into planner/executor/synthesizer agents would add
   coordination cost with no benefit. Knowing when *not* to reach for complexity
   is part of the judgment.
-
-## Video narration guide (maps to the 3 asks)
-
-1. **Workflow today** — walk `audit/operating_map.md`: who, how often, the real
-   numbers (~5–7 hrs), and the pricing-runaround pain. Show his actual spreadsheet.
-2. **Building process** — open `prompts.py` and show the v1→v2 pricing prompt
-   change. Then run once and **watch the schema validator reject the invented
-   price on hotel-esencia and retry** (grep `validation_failed` in the audit
-   trail). That's the real failure moment.
-3. **Working demo** — `python main.py`, open `out/shortlist.html`, show the
-   recommended venues, the escalated ones, a drafted email, and the cost line.
-   Then `python -m evals.run_evals` for the pass rate.
 ```
 ```
