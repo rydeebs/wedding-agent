@@ -71,23 +71,41 @@ DEMO_DIR = os.path.join(ROOT, "demo")
 # demo: the dashboard, the run walkthrough, the prompts); every POST returns
 # 403. This is enforced here rather than by hiding buttons, because a hidden
 # button is not a control -- anyone can still post to the route.
-DEMO_READONLY = os.environ.get("DEMO_READONLY", "").strip().lower() in ("1", "true", "yes")
-
-# Railway (and most PaaS) inject $PORT and expect the process to bind a routable
-# interface. Binding 0.0.0.0 is only acceptable BECAUSE of DEMO_READONLY above;
-# if you set one without the other you are publishing a run button.
+# Railway (and most PaaS) inject $PORT and expect a routable bind.
 _PLATFORM_PORT = os.environ.get("PORT")
 HOST = os.environ.get("CRITERIA_SERVER_HOST") or ("0.0.0.0" if _PLATFORM_PORT else "localhost")
 PORT = int(_PLATFORM_PORT or os.environ.get("CRITERIA_SERVER_PORT", "8420"))
 
-if HOST not in ("localhost", "127.0.0.1", "::1") and not DEMO_READONLY:
+_LOOPBACK = HOST in ("localhost", "127.0.0.1", "::1")
+_RO = os.environ.get("DEMO_READONLY", "").strip().lower()
+
+# The default follows the BIND, not a flag someone has to remember.
+#
+# The first version required DEMO_READONLY explicitly and refused to start
+# without it. That is safe but it is the wrong default: forgetting one
+# environment variable produced a container that crash-looped, so the failure
+# mode of a mistake was "the whole site is down". Defaulting on a routable bind
+# means the mistake now produces a working, read-only site instead -- still
+# nothing a stranger can POST to, but people can see it.
+#
+# Opting OUT is still possible and still explicit (DEMO_READONLY=0), and that
+# is the one combination that refuses to start, because it is the only one that
+# actually publishes a run button.
+if _RO in ("1", "true", "yes"):
+    DEMO_READONLY = True
+elif _RO in ("0", "false", "no"):
+    DEMO_READONLY = False
+else:
+    DEMO_READONLY = not _LOOPBACK
+
+if not _LOOPBACK and not DEMO_READONLY:
     sys.exit(
-        "Refusing to start: HOST is not loopback and DEMO_READONLY is not set.\n"
-        "This server has no authentication, so a routable bind would expose\n"
-        "POST /run (spends API credit), POST /send (emails a venue) and\n"
-        "POST /criteria to anyone who finds the URL.\n\n"
-        "  For a public demo:  DEMO_READONLY=1\n"
-        "  For local use:      leave HOST unset (defaults to localhost)\n"
+        f"Refusing to start: bound to {HOST} with DEMO_READONLY={_RO!r}.\n"
+        "This server has no authentication, so a routable bind with writes\n"
+        "enabled would expose POST /run (spends API credit), POST /send\n"
+        "(emails a venue) and POST /criteria to anyone who finds the URL.\n\n"
+        "  Public demo:  unset DEMO_READONLY (read-only is the default here)\n"
+        "  Local use:    unset CRITERIA_SERVER_HOST (defaults to localhost)\n"
     )
 # Real-mode runs are long, and deliberately unbounded in breadth: search is
 # uncapped per region and every venue found is evaluated. One live region

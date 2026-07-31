@@ -306,21 +306,32 @@ time, `/send` emails a real venue, `/criteria` rewrites the agent's input. So a
 deployed instance runs **read-only**.
 
 ```bash
-DEMO_READONLY=1 PORT=8080 python server.py
+PORT=8080 python server.py        # read-only, because the bind is routable
 ```
+
+**Read-only follows the bind, not a flag you have to remember.** If `$PORT` is
+set (Railway and most PaaS inject it) the server binds `0.0.0.0` and turns
+read-only automatically. There is nothing to configure and nothing to forget.
+
+| Environment | Bind | Writes |
+|---|---|---|
+| nothing set | `localhost` | enabled |
+| `$PORT` set (PaaS) | `0.0.0.0` | **disabled** |
+| `DEMO_READONLY=1` | unchanged | disabled |
+| routable bind + `DEMO_READONLY=0` | — | **refuses to start** |
 
 - Every `GET` works — dashboard, `/steps`, `/prompts`, `/report`. That is the demo.
 - Every `POST` returns 403, enforced in middleware. The UI also drops the write
   controls, but that is cosmetic; the middleware is the control.
-- **The server refuses to start** on a non-loopback bind unless `DEMO_READONLY`
-  is set, so you cannot publish a run button by forgetting a flag.
+- The only combination that refuses to start is an explicit opt-out on a
+  routable bind, because it is the only one that actually publishes a run button.
 - `demo/` is a committed snapshot of one real run (contact emails stripped) used
   only when `runs/` is empty, so a fresh container shows real results instead of
   an empty page. See `demo/README.md`.
 
-`railway.json` and `Procfile` are checked in. On Railway: point it at the repo,
-set **`DEMO_READONLY=1`**, and set no API key — the demo needs none. Railway
-supplies `$PORT`.
+`railway.json` and `Procfile` are checked in. On Railway: point it at the repo
+and deploy. **No environment variables are required**, and no API key — the
+demo needs none.
 
 **What a real multi-user version would add:** authentication and per-user
 authorization, so runs and sends belong to someone; managed secrets rather than

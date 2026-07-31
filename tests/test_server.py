@@ -307,6 +307,50 @@ def main():
     os.environ.pop("DEMO_READONLY", None)
     importlib.reload(server)
 
+    # --- read-only defaults follow the BIND, not a remembered flag --------
+    # Requiring an explicit DEMO_READONLY meant forgetting it crash-looped the
+    # container: a mistake took the whole site down. These pin the rule that a
+    # routable bind is read-only unless someone opts out on purpose.
+    def load_server(**env):
+        """Import server.py fresh under a specific environment."""
+        import importlib.util
+        keep = {k: os.environ.get(k) for k in ("PORT", "DEMO_READONLY", "CRITERIA_SERVER_HOST")}
+        for k in keep:
+            os.environ.pop(k, None)
+        os.environ.update({k: v for k, v in env.items()})
+        try:
+            spec = importlib.util.spec_from_file_location("s_probe", os.path.join(ROOT, "server.py"))
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            return mod, None
+        except SystemExit as e:
+            return None, str(e)
+        finally:
+            for k in ("PORT", "DEMO_READONLY", "CRITERIA_SERVER_HOST"):
+                os.environ.pop(k, None)
+            for k, v in keep.items():
+                if v is not None:
+                    os.environ[k] = v
+
+    m, _ = load_server()
+    check("no env: binds loopback, writes enabled", m and m.HOST == "localhost" and not m.DEMO_READONLY)
+
+    m, _ = load_server(PORT="8080")
+    check("PaaS $PORT alone: routable bind defaults to READ-ONLY",
+          m is not None and m.HOST == "0.0.0.0" and m.DEMO_READONLY is True)
+
+    m, _ = load_server(PORT="8080", DEMO_READONLY="1")
+    check("PaaS + explicit DEMO_READONLY=1 stays read-only",
+          m is not None and m.DEMO_READONLY is True)
+
+    m, err = load_server(PORT="8080", DEMO_READONLY="0")
+    check("routable bind + explicit opt-out refuses to start",
+          m is None and err is not None and "Refusing to start" in err)
+
+    m, _ = load_server(DEMO_READONLY="1")
+    check("read-only can be forced locally too",
+          m is not None and m.HOST == "localhost" and m.DEMO_READONLY is True)
+
     # --- syntax floor -----------------------------------------------------
     # A nested same-quoted expression inside an f-string is PEP 701 and parses
     # only on 3.12+. It ran locally and crash-looped the deploy container on
