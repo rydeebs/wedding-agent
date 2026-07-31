@@ -290,21 +290,42 @@ agent's own input path is unchanged; it still just reads `criteria.json`.
 - A strict field whitelist. Unknown keys are an error, so the editor cannot
   become a way to introduce fields the agent never agreed to read.
 
-**Security posture — read this before exposing it anywhere.** The server binds
-`127.0.0.1` only and has **no authentication**; the socket is the entire
+**Security posture — read this before exposing it anywhere.** Locally the server
+binds `localhost` and has **no authentication**; the socket is the entire
 boundary. It additionally refuses cross-origin requests, which is what stops a
 public web page from resolving a hostname to 127.0.0.1 and posting to it from
-your browser. A triggered run is **forced to `AGENT_MODE=mock`** — a button in
-a browser must never be able to spend API credit or make live calls to
-Anthropic and Google. Real-mode runs stay an explicit terminal command.
+your browser. `POST /run` honors `AGENT_MODE`, so with `AGENT_MODE=real` in
+`.env` a click on *Run agent* starts a real, billable run — keep it on `mock`
+if that is not what you want.
 
-**What a production version would add:** deploying `server.py` to something like
-Railway with managed secrets (so `credentials.json` / `token.json` / API keys
-come from a secret store rather than files on a laptop), plus real
-authentication and per-user authorization — right now anyone on the machine can
-rewrite the criteria and send an inquiry. Also: a geocoder, so arbitrary regions
-resolve to coordinates instead of a static `REGION_COORDS` lookup and unknown
-regions stop being rejected; and a job queue with run IDs, progress,
+### Deploying (read-only demo)
+
+A public URL removes the socket boundary, and the three POST routes are exactly
+the ones a stranger should not have: `/run` spends API credit for minutes at a
+time, `/send` emails a real venue, `/criteria` rewrites the agent's input. So a
+deployed instance runs **read-only**.
+
+```bash
+DEMO_READONLY=1 PORT=8080 python server.py
+```
+
+- Every `GET` works — dashboard, `/steps`, `/prompts`, `/report`. That is the demo.
+- Every `POST` returns 403, enforced in middleware. The UI also drops the write
+  controls, but that is cosmetic; the middleware is the control.
+- **The server refuses to start** on a non-loopback bind unless `DEMO_READONLY`
+  is set, so you cannot publish a run button by forgetting a flag.
+- `demo/` is a committed snapshot of one real run (contact emails stripped) used
+  only when `runs/` is empty, so a fresh container shows real results instead of
+  an empty page. See `demo/README.md`.
+
+`railway.json` and `Procfile` are checked in. On Railway: point it at the repo,
+set **`DEMO_READONLY=1`**, and set no API key — the demo needs none. Railway
+supplies `$PORT`.
+
+**What a real multi-user version would add:** authentication and per-user
+authorization, so runs and sends belong to someone; managed secrets rather than
+files on a laptop; a geocoder so arbitrary regions resolve to coordinates
+instead of a static `REGION_COORDS` lookup; and a job queue with run IDs,
 cancellation and concurrency limits instead of the current single blocking
 subprocess under a lock.
 

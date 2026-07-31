@@ -272,6 +272,39 @@ def main():
 
     shutil.rmtree(tmp, ignore_errors=True)
 
+    # --- read-only demo mode ---------------------------------------------
+    # A public deployment has no socket boundary left, so the method IS the
+    # boundary. These assert the three dangerous routes are actually closed --
+    # hiding the buttons in the UI is not a control, since anyone can post to
+    # the route directly.
+    import importlib
+    os.environ["DEMO_READONLY"] = "1"
+    ro = importlib.reload(server)
+    ro_client = TestClient(ro.app)
+
+    for path, payload in (("/criteria", {"criteria": good}), ("/run", {}),
+                          ("/send", {"url": "https://example.com/casa-jaguar"})):
+        r = ro_client.post(path, json=payload, headers={"Origin": "http://localhost:8420"})
+        check(f"read-only demo refuses POST {path}", r.status_code == 403, r.text[:120])
+
+    for path in ("/", "/report", "/steps", "/prompts", "/criteria"):
+        r = ro_client.get(path)
+        check(f"read-only demo still serves GET {path}", r.status_code == 200, str(r.status_code))
+
+    # Same-origin must be accepted on a deployed host, or the site's own fetches
+    # would 403 against their own domain.
+    r = ro_client.get("/report", headers={"Origin": "https://wedding-agent.up.railway.app",
+                                          "Host": "wedding-agent.up.railway.app"})
+    check("same-origin allowed on a deployed host", r.status_code == 200, str(r.status_code))
+
+    # And a genuinely foreign origin is still refused there.
+    r = ro_client.get("/report", headers={"Origin": "https://evil.example",
+                                          "Host": "wedding-agent.up.railway.app"})
+    check("foreign origin refused on a deployed host", r.status_code == 403, str(r.status_code))
+
+    os.environ.pop("DEMO_READONLY", None)
+    importlib.reload(server)
+
     print(f"\n{len(PASS)} passed, {len(FAIL)} failed")
     if FAIL:
         for f in FAIL:

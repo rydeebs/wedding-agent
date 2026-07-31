@@ -332,6 +332,8 @@ _TEMPLATE = r"""<!doctype html>
   .sent-badge{margin:7px 0 2px 30px; font-size:10.5px; letter-spacing:.08em;
               text-transform:uppercase; color:var(--teal)}
   .no-email{margin:7px 0 2px 30px; font-size:10.5px; color:var(--muted2)}
+  .ro-note{margin:9px 0 2px; font-size:11px; line-height:1.6; color:var(--muted);
+           border-left:2px solid var(--line); padding-left:11px; max-width:62ch}
   .draft{margin-top:8px; border-left:1px solid var(--line); padding-left:11px}
   .draft label{display:block; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
                color:var(--muted); margin:9px 0 3px}
@@ -466,6 +468,10 @@ _TEMPLATE = r"""<!doctype html>
    from dashboard.build_data(). */
 let DATA = /*__DATA__*/;
 let LIVE = false;                 // is server.py behind this page?
+/* A public deployment serves this page read-only: the server 403s every POST,
+   so the write controls are dropped rather than left to fail on click. The
+   server is the control; this is only the honest UI for it. */
+const RO = () => !!DATA.readonly;
 const $ = s => document.querySelector(s);
 /* Escapes quotes too, so a value is safe in an attribute and not just in a
    text node. Criteria are user-editable now, so this string can contain
@@ -552,8 +558,11 @@ let renderCriteria;   // defined below; called by renderAll()
       <div style="margin-top:12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Nice to have</div>
       <div class="chips">${nice}</div>
       <div class="crit-actions">
-        ${LIVE ? `<button class="btn" id="crit-edit">Edit criteria</button>
+        ${LIVE && !RO() ? `<button class="btn" id="crit-edit">Edit criteria</button>
                   <button class="btn" id="crit-run">Run agent</button>` : ``}
+        ${RO() ? `<div class="ro-note">Read-only demo — showing a real run of
+          ${DATA.summary.venues_evaluated} venues. Editing criteria and starting
+          a run are disabled here; clone the repo to use them.</div>` : ``}
       </div>
       ${LIVE ? `` : `<div style="margin-top:9px;font-size:10.5px;color:var(--muted2);line-height:1.5">
          Read-only snapshot. Start the server and open it there to edit and rerun:
@@ -807,7 +816,7 @@ function renderRecommended(){
     const done = sent[r.url];
     let action = "";
     if (done) action = `<div class="sent-badge">✓ inquiry sent · ${esc(fmtTime(done.sent_at))}${done.mode==="mock"?" (demo)":""}</div>`;
-    else if (!LIVE) action = "";
+    else if (!LIVE || RO()) action = "";   // read-only demo offers no send path
     else if (!canSend) action = `<div class="no-email">no email found — send manually</div>`;
     else action = `<div class="send-wrap"><button class="btn small" data-send="${esc(r.url)}">Send inquiry</button></div>`;
     const href = safeUrl(r.url);

@@ -1,0 +1,438 @@
+{"ts": "2026-07-31T13:08:05.783047+00:00", "step": 0, "event": "run_started", "criteria": {"couple": "Ryan's brother + fiancee", "regions": ["Italy", "Greece", "Portugal"], "guest_count": 105, "budget_ceiling_usd": 80000, "date_window": "May-Aug 2027", "must_haves": ["on-site lodging for guests", "capacity for at least 85", "indoor backup for weather"], "nice_to_haves": ["beachfront or dramatic natural setting"], "vibe": "intimate, natural, not a big-box resort ballroom, coastal"}, "mode": "real", "autonomy": "draft_only", "max_steps": 120}
+{"ts": "2026-07-31T13:19:11.712919+00:00", "step": 0, "event": "region_search", "region": "Italy", "n_results": 50}
+{"ts": "2026-07-31T13:19:12.530018+00:00", "step": 1, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:18.718728+00:00", "step": 2, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:19:22.068576+00:00", "step": 3, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:19:22.073126+00:00", "step": 3, "event": "scored", "url": "https://villalaselva.it/en/weddings/", "decision": "reject", "score": 0.15, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 2, "unmet": 1}}
+{"ts": "2026-07-31T13:19:23.138830+00:00", "step": 4, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:31.020130+00:00", "step": 5, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:19:31.022703+00:00", "step": 5, "event": "grounding_failed", "url": "https://www.lalista.com/venues/tuscany/villa-pozzolo", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 120}
+{"ts": "2026-07-31T13:19:38.507281+00:00", "step": 6, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:19:38.508642+00:00", "step": 6, "event": "scored", "url": "https://www.lalista.com/venues/tuscany/villa-pozzolo", "decision": "escalate", "score": 0.78, "confidence": 0.75, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:19:39.402309+00:00", "step": 7, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:39.402834+00:00", "step": 7, "event": "filtered_non_venue", "url": "https://thetuscanwedding.com/venues", "classification": "listicle"}
+{"ts": "2026-07-31T13:19:41.165641+00:00", "step": 8, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:41.166068+00:00", "step": 8, "event": "filtered_non_venue", "url": "https://www.lalista.com/venues/tuscany", "classification": "listicle"}
+{"ts": "2026-07-31T13:19:42.604605+00:00", "step": 9, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:42.605035+00:00", "step": 9, "event": "filtered_non_venue", "url": "https://www.weddingvenuesintuscany.com/", "classification": "listicle"}
+{"ts": "2026-07-31T13:19:43.504142+00:00", "step": 10, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:43.504761+00:00", "step": 10, "event": "filtered_non_venue", "url": "https://tuscandream.com/tuscany-weddings/locations/", "classification": "listicle"}
+{"ts": "2026-07-31T13:19:44.338191+00:00", "step": 11, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:44.338559+00:00", "step": 11, "event": "filtered_non_venue", "url": "https://www.romanticitalianweddings.com/packages/villa/", "classification": "listicle"}
+{"ts": "2026-07-31T13:19:45.689408+00:00", "step": 12, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:45.689807+00:00", "step": 12, "event": "filtered_non_venue", "url": "https://www.exclusiveitalyweddings.com/lake-villas-wedding-venue-in-italy", "classification": "vendor"}
+{"ts": "2026-07-31T13:19:47.222034+00:00", "step": 13, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:19:56.046879+00:00", "step": 14, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:20:01.109828+00:00", "step": 15, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:20:01.112587+00:00", "step": 15, "event": "scored", "url": "https://www.exclusiveitalyweddings.com/villa-pizzo-for-weddings-on-lake-como", "decision": "reject", "score": 0.3, "confidence": 0.85, "model_confidence": 0.85, "must_haves": {"unmet": 1, "met": 2}}
+{"ts": "2026-07-31T13:20:02.831218+00:00", "step": 16, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:20:02.831642+00:00", "step": 16, "event": "filtered_non_venue", "url": "https://distinctiveitalyweddings.com/italian-wedding-locations/lake-como/lake-como-ceremonies/villa-balbianello.html", "classification": "vendor"}
+{"ts": "2026-07-31T13:20:03.585218+00:00", "step": 17, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:20:12.270523+00:00", "step": 18, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:20:19.345211+00:00", "step": 19, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:20:19.345996+00:00", "step": 19, "event": "scored", "url": "https://villalarioresortmandello.com/en/wedding/", "decision": "recommend", "score": 0.85, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:20:26.160658+00:00", "step": 20, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:20:26.163142+00:00", "step": 20, "event": "email_drafted", "url": "https://villalarioresortmandello.com/en/wedding/", "references": "Couples can arrive by private boat at the villa's own dock"}
+{"ts": "2026-07-31T13:20:27.660762+00:00", "step": 21, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:20:27.661315+00:00", "step": 21, "event": "filtered_non_venue", "url": "https://www.infinity-weddingsandevents.com/en/venues/luxury-lake-como-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:20:28.370681+00:00", "step": 22, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:20:37.226728+00:00", "step": 23, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:20:47.820996+00:00", "step": 24, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:20:47.823516+00:00", "step": 24, "event": "scored", "url": "https://www.villagiulia-alterrazzo.com/en/lake-como-wedding-venue/", "decision": "escalate", "score": 0.55, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:20:48.540268+00:00", "step": 25, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:00.685538+00:00", "step": 26, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:21:00.686680+00:00", "step": 26, "event": "validation_failed", "tag": "extract", "attempt": 0, "error": "no JSON object found in response: line 1 column 1 (char 0)"}
+{"ts": "2026-07-31T13:21:07.866817+00:00", "step": 27, "event": "model_call", "tag": "extract", "attempt": 1}
+{"ts": "2026-07-31T13:21:07.870725+00:00", "step": 27, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/lake-como/villa-balbiano/", "flags": ["price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 200}
+{"ts": "2026-07-31T13:21:15.887608+00:00", "step": 28, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:21:15.889190+00:00", "step": 28, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/lake-como/villa-balbiano/", "decision": "escalate", "score": 0.4, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:21:17.278935+00:00", "step": 29, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:17.279389+00:00", "step": 29, "event": "filtered_non_venue", "url": "https://www.boutique-weddings.com/wedding-venues-lake-como/", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:18.493080+00:00", "step": 30, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:18.493483+00:00", "step": 30, "event": "filtered_non_venue", "url": "https://www.theweddingtravelcompany.com/destinations/europe-weddings/italy-weddings/lake-garda-weddings/torri-del-benaco-castle", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:21.654170+00:00", "step": 31, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:21.654607+00:00", "step": 31, "event": "filtered_non_venue", "url": "https://www.gardatrentino.it/en/plan-your-trip/from-a-to-z/weddings", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:23.588756+00:00", "step": 32, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:23.589306+00:00", "step": 32, "event": "filtered_non_venue", "url": "https://www.theweddingtravelcompany.com/destinations/europe-weddings/italy-weddings/lake-garda-weddings/malcesine-castle", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:25.668665+00:00", "step": 33, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:25.669044+00:00", "step": 33, "event": "filtered_non_venue", "url": "https://www.italianweddingcompany.com/wedding-italy/malcesine-castle-wedding-lake-garda/", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:27.235262+00:00", "step": 34, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:27.235527+00:00", "step": 34, "event": "filtered_non_venue", "url": "https://www.myitalianlakewedding.com/venues/lake-garda-wedding-venues/malcesine-castle/", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:28.509353+00:00", "step": 35, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:28.510523+00:00", "step": 35, "event": "filtered_non_venue", "url": "https://weddingsatlakegarda.com/locations/lonato/", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:29.859417+00:00", "step": 36, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:29.859903+00:00", "step": 36, "event": "filtered_non_venue", "url": "https://weddingsatlakegarda.com/", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:30.586452+00:00", "step": 37, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:41.951246+00:00", "step": 38, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:21:41.953788+00:00", "step": 38, "event": "grounding_failed", "url": "https://www.lakegardaweddings.com/wedding-locations/malcesine-castle", "flags": ["capacity 100 does not appear anywhere on the page"], "pricing_signal": "unknown", "capacity_max": null}
+{"ts": "2026-07-31T13:21:48.779538+00:00", "step": 39, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:21:48.780201+00:00", "step": 39, "event": "scored", "url": "https://www.lakegardaweddings.com/wedding-locations/malcesine-castle", "decision": "escalate", "score": 0.55, "confidence": 0.35, "model_confidence": 0.55, "must_haves": {"unknown": 2, "met": 1}}
+{"ts": "2026-07-31T13:21:49.495795+00:00", "step": 40, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:49.496218+00:00", "step": 40, "event": "filtered_non_venue", "url": "https://thewed.com/magazine/best-wedding-venues-on-the-amalfi-coast", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:50.208815+00:00", "step": 41, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:50.209249+00:00", "step": 41, "event": "filtered_non_venue", "url": "https://www.exclusiveitalyweddings.com/villa-cimbrone-weddings-ravello", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:51.354163+00:00", "step": 42, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:51.354582+00:00", "step": 42, "event": "filtered_non_venue", "url": "https://www.exclusiveitalyweddings.com/seaside-villas-wedding-venue-in-italy", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:52.141262+00:00", "step": 43, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:52.141776+00:00", "step": 43, "event": "filtered_non_venue", "url": "https://www.amalficoast-villas.com/a-fabulous-wedding-on-the-amalfi-coast.html", "classification": "vendor"}
+{"ts": "2026-07-31T13:21:53.241985+00:00", "step": 44, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:53.242184+00:00", "step": 44, "event": "filtered_non_venue", "url": "https://www.weddingitaly.com/en/best-venues/wedding-venues-on-the-amalfi-coast", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:54.819906+00:00", "step": 45, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:54.820415+00:00", "step": 45, "event": "filtered_non_venue", "url": "https://www.mrandmrsweddinginitaly.com/venues/villas/", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:55.967263+00:00", "step": 46, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:55.967779+00:00", "step": 46, "event": "filtered_non_venue", "url": "https://quattrostudio.eu/wedding-guide/top-10-wedding-venues-amalfi-coast-villas-hotels", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:56.764429+00:00", "step": 47, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:21:56.764870+00:00", "step": 47, "event": "filtered_non_venue", "url": "https://www.the-international-wedding-planner.com/wedding-venues-amalfi-coast/", "classification": "listicle"}
+{"ts": "2026-07-31T13:21:57.645603+00:00", "step": 48, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:22:06.321309+00:00", "step": 49, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:22:06.329185+00:00", "step": 49, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-montignano/", "flags": ["price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 120}
+{"ts": "2026-07-31T13:22:18.799840+00:00", "step": 50, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:22:18.802474+00:00", "step": 50, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-montignano/", "decision": "recommend", "score": 0.85, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:22:25.203031+00:00", "step": 51, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:22:25.205269+00:00", "step": 51, "event": "email_drafted", "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-montignano/", "references": "the 'Lord of the Castle' experience with exclusive use of the entire estate, including the heated indoor pool"}
+{"ts": "2026-07-31T13:22:25.981984+00:00", "step": 52, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:22:31.460325+00:00", "step": 53, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:22:31.463529+00:00", "step": 53, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-petrata/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 175}
+{"ts": "2026-07-31T13:22:40.681171+00:00", "step": 54, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:22:40.682136+00:00", "step": 54, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-petrata/", "decision": "escalate", "score": 0.55, "confidence": 0.75, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:22:42.027089+00:00", "step": 55, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:22:54.939107+00:00", "step": 56, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:22:54.942437+00:00", "step": 56, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/umbria/borgo-castello-panicaglia/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 75}
+{"ts": "2026-07-31T13:23:00.229805+00:00", "step": 57, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:23:00.231379+00:00", "step": 57, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/umbria/borgo-castello-panicaglia/", "decision": "reject", "score": 0.1, "confidence": 0.6, "model_confidence": 0.9, "must_haves": {"met": 1, "unmet": 1, "unknown": 1}}
+{"ts": "2026-07-31T13:23:02.334309+00:00", "step": 58, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:23:02.337134+00:00", "step": 58, "event": "filtered_non_venue", "url": "https://www.lalista.com/venues/umbria/castello-di-petrata", "classification": "listicle"}
+{"ts": "2026-07-31T13:23:04.573948+00:00", "step": 59, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:23:04.574268+00:00", "step": 59, "event": "filtered_non_venue", "url": "https://www.lalista.com/venues/umbria/castello-di-montignano", "classification": "listicle"}
+{"ts": "2026-07-31T13:23:05.487511+00:00", "step": 60, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:23:12.773703+00:00", "step": 61, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:23:12.778078+00:00", "step": 61, "event": "grounding_failed", "url": "https://thewhiteedit.com/find-a-venue/castello-di-petrata-umbria/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "unknown", "capacity_max": 200}
+{"ts": "2026-07-31T13:23:25.249535+00:00", "step": 62, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:23:25.250317+00:00", "step": 62, "event": "validation_failed", "tag": "score", "attempt": 0, "error": "no JSON object found in response: line 1 column 1 (char 0)"}
+{"ts": "2026-07-31T13:23:33.637450+00:00", "step": 63, "event": "model_call", "tag": "score", "attempt": 1}
+{"ts": "2026-07-31T13:23:33.639238+00:00", "step": 63, "event": "scored", "url": "https://thewhiteedit.com/find-a-venue/castello-di-petrata-umbria/", "decision": "escalate", "score": 0.78, "confidence": 0.65, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:23:34.455208+00:00", "step": 64, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:23:42.257097+00:00", "step": 65, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:23:47.584039+00:00", "step": 66, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:23:47.584727+00:00", "step": 66, "event": "scored", "url": "https://www.weddings.castellopetrata.com/", "decision": "escalate", "score": 0.6, "confidence": 0.5, "model_confidence": 0.5, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:23:48.401216+00:00", "step": 67, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:23:57.880739+00:00", "step": 68, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:24:08.904875+00:00", "step": 69, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:24:08.906117+00:00", "step": 69, "event": "scored", "url": "https://www.weddings.castellopetrata.com/venue", "decision": "escalate", "score": 0.55, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:24:09.584471+00:00", "step": 70, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:24:22.920184+00:00", "step": 71, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:24:28.904961+00:00", "step": 72, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:24:28.907189+00:00", "step": 72, "event": "scored", "url": "https://www.roccofortehotels.com/hotels-and-resorts/masseria-torre-maizza/groups-weddings/", "decision": "escalate", "score": 0.6, "confidence": 0.45, "model_confidence": 0.45, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:24:29.757452+00:00", "step": 73, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:24:38.662979+00:00", "step": 74, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:24:38.668413+00:00", "step": 74, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-alchimia/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 250}
+{"ts": "2026-07-31T13:24:47.524192+00:00", "step": 75, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:24:47.526232+00:00", "step": 75, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-alchimia/", "decision": "escalate", "score": 0.82, "confidence": 0.75, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:24:48.911689+00:00", "step": 76, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:24:58.851813+00:00", "step": 77, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:24:58.855516+00:00", "step": 77, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-spina/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 160}
+{"ts": "2026-07-31T13:25:12.675204+00:00", "step": 78, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:25:12.676948+00:00", "step": 78, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-spina/", "decision": "escalate", "score": 0.45, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:25:13.769348+00:00", "step": 79, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:25.160349+00:00", "step": 80, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:25:29.973121+00:00", "step": 81, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:25:29.973534+00:00", "step": 81, "event": "scored", "url": "https://www.alchimiacollection.com/en/wedding-destination-puglia/", "decision": "reject", "score": 0.1, "confidence": 0.95, "model_confidence": 0.95, "must_haves": {"met": 2, "unmet": 1}}
+{"ts": "2026-07-31T13:25:30.732522+00:00", "step": 82, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:30.733232+00:00", "step": 82, "event": "filtered_non_venue", "url": "https://www.lalista.com/venues/puglia", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:31.750024+00:00", "step": 83, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:31.750367+00:00", "step": 83, "event": "filtered_non_venue", "url": "https://kaipoweddings.de/en/wedding-venues-masseria-apulia-italy/", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:33.264943+00:00", "step": 84, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:33.265194+00:00", "step": 84, "event": "filtered_non_venue", "url": "https://laurenbelz.com/best-wedding-venues-in-puglia-italy/", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:34.189536+00:00", "step": 85, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:34.189848+00:00", "step": 85, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/articles/destination/8-romantic-wedding-venues-in-sicily/", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:34.921554+00:00", "step": 86, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:34.922905+00:00", "step": 86, "event": "filtered_non_venue", "url": "https://www.sicilianweddingandevent.com/luxury-weddings-venues-in-sicily-top-7-seasides-castles-and-villas/", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:35.805946+00:00", "step": 87, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:35.806529+00:00", "step": 87, "event": "filtered_non_venue", "url": "https://www.sicilianweddingday.com/venues", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:37.210698+00:00", "step": 88, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:25:37.211345+00:00", "step": 88, "event": "filtered_non_venue", "url": "https://schwemmer-photography.de/en/wedding-venues-sicily/", "classification": "listicle"}
+{"ts": "2026-07-31T13:25:37.216058+00:00", "step": 88, "event": "checkpoint_saved"}
+{"ts": "2026-07-31T13:26:32.638873+00:00", "step": 88, "event": "region_search", "region": "Greece", "n_results": 50}
+{"ts": "2026-07-31T13:26:33.951419+00:00", "step": 89, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:33.952295+00:00", "step": 89, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/wedding-venues/santorini/", "classification": "listicle"}
+{"ts": "2026-07-31T13:26:34.865741+00:00", "step": 90, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:34.866163+00:00", "step": 90, "event": "filtered_non_venue", "url": "https://www.weddings-in-santorini.com/santoriniweddingvenues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:26:36.437837+00:00", "step": 91, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:41.335787+00:00", "step": 92, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:26:46.534815+00:00", "step": 93, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:26:46.535561+00:00", "step": 93, "event": "scored", "url": "https://www.cavoventus.com/", "decision": "escalate", "score": 0.35, "confidence": 0.2, "model_confidence": 0.2, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:26:48.275094+00:00", "step": 94, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:48.276270+00:00", "step": 94, "event": "filtered_non_venue", "url": "https://www.weddings-in-santorini.com/index.html", "classification": "vendor"}
+{"ts": "2026-07-31T13:26:49.019309+00:00", "step": 95, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:52.341797+00:00", "step": 96, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:26:57.761350+00:00", "step": 97, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:26:57.763524+00:00", "step": 97, "event": "scored", "url": "https://leciel-santorini.com/", "decision": "escalate", "score": 0.2, "confidence": 0.45000000000000007, "model_confidence": 0.75, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:26:58.867441+00:00", "step": 98, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:26:58.867917+00:00", "step": 98, "event": "filtered_non_venue", "url": "https://www.rocabellaweddings.com/santorini-wedding-venues", "classification": "listicle"}
+{"ts": "2026-07-31T13:27:00.322096+00:00", "step": 99, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:00.322888+00:00", "step": 99, "event": "filtered_non_venue", "url": "https://santorinigem.com/", "classification": "irrelevant"}
+{"ts": "2026-07-31T13:27:01.233283+00:00", "step": 100, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:01.233705+00:00", "step": 100, "event": "filtered_non_venue", "url": "https://www.divineweddingsantorini.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:27:02.366474+00:00", "step": 101, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:02.366923+00:00", "step": 101, "event": "filtered_non_venue", "url": "https://www.rocabellaweddings.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:27:03.175067+00:00", "step": 102, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:10.211440+00:00", "step": 103, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:27:17.061615+00:00", "step": 104, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:27:17.062762+00:00", "step": 104, "event": "scored", "url": "https://elviento-santorini.com/", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:27:17.973577+00:00", "step": 105, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:17.974156+00:00", "step": 105, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/wedding-venues/mykonos/", "classification": "listicle"}
+{"ts": "2026-07-31T13:27:22.166915+00:00", "step": 106, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:37.765862+00:00", "step": 106, "event": "fetch_failed", "url": "https://www.fourseasons.com/mykonos/weddings/", "error": "tool failed after 5 attempts: 403 Client Error: Forbidden for url: https://www.fourseasons.com/mykonos/weddings/"}
+{"ts": "2026-07-31T13:27:39.268714+00:00", "step": 107, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:39.269191+00:00", "step": 107, "event": "filtered_non_venue", "url": "https://thewhiteedit.com/find-a-venue/principote-beach-club-mykonos/", "classification": "listicle"}
+{"ts": "2026-07-31T13:27:39.987647+00:00", "step": 108, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:27:49.517452+00:00", "step": 109, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:27:57.371231+00:00", "step": 110, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:27:57.371966+00:00", "step": 110, "event": "scored", "url": "https://hippiefish-mykonos.com/wedding-venue-mykonos/", "decision": "escalate", "score": 0.3, "confidence": 0.15, "model_confidence": 0.15, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:27:58.041785+00:00", "step": 111, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:07.264025+00:00", "step": 112, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:28:12.498331+00:00", "step": 113, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:28:12.499710+00:00", "step": 113, "event": "scored", "url": "https://www.amazonmykonos.com/weddings/", "decision": "escalate", "score": 0.55, "confidence": 0.5, "model_confidence": 0.5, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:28:13.333512+00:00", "step": 114, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:13.333909+00:00", "step": 114, "event": "filtered_non_venue", "url": "https://www.vangelisphotography.com/greece-wedding-venues/mykonos-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:28:14.955604+00:00", "step": 115, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:14.955859+00:00", "step": 115, "event": "filtered_non_venue", "url": "https://www.mykonos-weddings.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:28:15.971457+00:00", "step": 116, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:23.832871+00:00", "step": 117, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:28:31.739211+00:00", "step": 118, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:28:31.740407+00:00", "step": 118, "event": "scored", "url": "https://www.myoverseaswedding.com/wedding-destinations/greece/royal-myconian", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:28:32.943924+00:00", "step": 119, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:32.944439+00:00", "step": 119, "event": "filtered_non_venue", "url": "https://www.mykonosweddings.net/", "classification": "vendor"}
+{"ts": "2026-07-31T13:28:33.875590+00:00", "step": 120, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:42.964383+00:00", "step": 121, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:28:42.967610+00:00", "step": 121, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/crete/villa-fuerte-weddings-estate/", "flags": ["price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 200}
+{"ts": "2026-07-31T13:28:49.435985+00:00", "step": 122, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:28:49.437243+00:00", "step": 122, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/crete/villa-fuerte-weddings-estate/", "decision": "escalate", "score": 0.6, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:28:50.359200+00:00", "step": 123, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:28:56.274774+00:00", "step": 124, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:29:03.384238+00:00", "step": 125, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:29:03.384950+00:00", "step": 125, "event": "scored", "url": "https://www.ktimareveli.gr/", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:29:04.123532+00:00", "step": 126, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:04.123846+00:00", "step": 126, "event": "filtered_non_venue", "url": "https://thebridalconsultants.com/crete-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:29:05.301968+00:00", "step": 127, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:05.302629+00:00", "step": 127, "event": "filtered_non_venue", "url": "https://akelaidis.com/crete-wedding-venues/", "classification": "vendor"}
+{"ts": "2026-07-31T13:29:08.174309+00:00", "step": 128, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:08.174521+00:00", "step": 128, "event": "filtered_non_venue", "url": "https://www.creteforlove.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:29:09.641180+00:00", "step": 129, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:09.641400+00:00", "step": 129, "event": "filtered_non_venue", "url": "https://www.cretevillas4u.com/en/collections/wedding-&-events-villas-in-crete", "classification": "listicle"}
+{"ts": "2026-07-31T13:29:15.027934+00:00", "step": 130, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:15.028222+00:00", "step": 130, "event": "filtered_non_venue", "url": "https://www.luxuryvillasoncrete.com/Weddings", "classification": "vendor"}
+{"ts": "2026-07-31T13:29:15.790841+00:00", "step": 131, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:15.791297+00:00", "step": 131, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/wedding-venues/rhodes/", "classification": "listicle"}
+{"ts": "2026-07-31T13:29:17.285888+00:00", "step": 132, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:17.286093+00:00", "step": 132, "event": "filtered_non_venue", "url": "https://www.theweddingtravelcompany.com/destinations/europe-weddings/greece-weddings/rhodes-weddings", "classification": "vendor"}
+{"ts": "2026-07-31T13:29:22.436569+00:00", "step": 133, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:22.437667+00:00", "step": 133, "event": "filtered_non_venue", "url": "https://thebridalconsultants.com/rhodes-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:29:23.174841+00:00", "step": 134, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:28.190788+00:00", "step": 135, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:29:33.994858+00:00", "step": 136, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:29:33.995765+00:00", "step": 136, "event": "scored", "url": "https://rhodes-weddings-venue.com/", "decision": "escalate", "score": 0.3, "confidence": 0.45000000000000007, "model_confidence": 0.75, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:29:35.333635+00:00", "step": 137, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:35.334043+00:00", "step": 137, "event": "filtered_non_venue", "url": "https://www.amazingweddingsrhodes.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:29:36.082819+00:00", "step": 138, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:39.540736+00:00", "step": 139, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:29:42.399107+00:00", "step": 140, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:29:42.400847+00:00", "step": 140, "event": "scored", "url": "https://www.rhodeslanding.com/", "decision": "escalate", "score": 0.3, "confidence": 0.2, "model_confidence": 0.2, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:29:43.303507+00:00", "step": 141, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:49.069041+00:00", "step": 142, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:29:53.681033+00:00", "step": 143, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:29:53.681426+00:00", "step": 143, "event": "scored", "url": "https://www.rhodesweddingservices.com/ceremony-venues/ceremony-venue-town-hall", "decision": "escalate", "score": 0.15, "confidence": 0.45000000000000007, "model_confidence": 0.75, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:29:54.790408+00:00", "step": 144, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:29:54.790798+00:00", "step": 144, "event": "filtered_non_venue", "url": "https://www.weddingsrhodes.com/ceremony-reception-venues", "classification": "listicle"}
+{"ts": "2026-07-31T13:29:55.787439+00:00", "step": 145, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:11.340375+00:00", "step": 145, "event": "fetch_failed", "url": "https://www.angsana.com/greece/corfu/weddings-honeymoons", "error": "tool failed after 5 attempts: 403 Client Error: Forbidden for url: https://www.angsana.com/greece/corfu/weddings-honeymoons"}
+{"ts": "2026-07-31T13:30:12.068726+00:00", "step": 146, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:12.069262+00:00", "step": 146, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/wedding-venues/corfu/", "classification": "listicle"}
+{"ts": "2026-07-31T13:30:12.804858+00:00", "step": 147, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:12.805238+00:00", "step": 147, "event": "filtered_non_venue", "url": "https://www.ionianweddings.co.uk/destinations/greek-islands/corfu/", "classification": "listicle"}
+{"ts": "2026-07-31T13:30:14.242980+00:00", "step": 148, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:19.016854+00:00", "step": 149, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:30:23.204657+00:00", "step": 150, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:30:23.206644+00:00", "step": 150, "event": "scored", "url": "https://www.villasylva.com/", "decision": "escalate", "score": 0.3, "confidence": 0.45000000000000007, "model_confidence": 0.75, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:30:23.851897+00:00", "step": 151, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:32.609560+00:00", "step": 152, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:30:32.611786+00:00", "step": 152, "event": "grounding_failed", "url": "https://thewhiteedit.com/find-a-venue/danilia-village-corfu/", "flags": ["price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "unknown", "capacity_max": 400}
+{"ts": "2026-07-31T13:30:40.757144+00:00", "step": 153, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:30:40.758285+00:00", "step": 153, "event": "scored", "url": "https://thewhiteedit.com/find-a-venue/danilia-village-corfu/", "decision": "escalate", "score": 0.75, "confidence": 0.65, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:30:41.622249+00:00", "step": 154, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:30:46.635066+00:00", "step": 155, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:30:59.644826+00:00", "step": 156, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:30:59.647299+00:00", "step": 156, "event": "scored", "url": "https://www.thecourtiestate.com/corfu-wedding-venue/", "decision": "recommend", "score": 0.75, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:31:06.114832+00:00", "step": 157, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:31:06.116381+00:00", "step": 157, "event": "email_drafted", "url": "https://www.thecourtiestate.com/corfu-wedding-venue/", "references": "Elegant indoor option accommodates up to 120 guests as an all-weather alternative"}
+{"ts": "2026-07-31T13:31:07.091487+00:00", "step": 158, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:07.092027+00:00", "step": 158, "event": "filtered_non_venue", "url": "https://mammamiaweddings.com/wedding-venues-in-corfu", "classification": "listicle"}
+{"ts": "2026-07-31T13:31:07.939018+00:00", "step": 159, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:11.897263+00:00", "step": 160, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:31:19.815030+00:00", "step": 161, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:31:19.817085+00:00", "step": 161, "event": "scored", "url": "https://ekateriniestatecorfu.com/weddings", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:31:20.527365+00:00", "step": 162, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:20.527835+00:00", "step": 162, "event": "filtered_non_venue", "url": "https://weddingincorfu.com/", "classification": "vendor"}
+{"ts": "2026-07-31T13:31:22.322213+00:00", "step": 163, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:28.338999+00:00", "step": 164, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:31:33.053291+00:00", "step": 165, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:31:33.054006+00:00", "step": 165, "event": "scored", "url": "https://canaldamourvillage.com/weddings/", "decision": "reject", "score": 0.1, "confidence": 0.75, "model_confidence": 0.9, "must_haves": {"met": 1, "unmet": 1, "unknown": 1}}
+{"ts": "2026-07-31T13:31:33.853328+00:00", "step": 166, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:33.853601+00:00", "step": 166, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/wedding-venues/peloponnese/", "classification": "listicle"}
+{"ts": "2026-07-31T13:31:34.504748+00:00", "step": 167, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:34.505261+00:00", "step": 167, "event": "filtered_non_venue", "url": "https://www.mrandmrssmith.com/search/wedding-hotels/greece/east-peloponnese", "classification": "listicle"}
+{"ts": "2026-07-31T13:31:35.389232+00:00", "step": 168, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:50.933249+00:00", "step": 168, "event": "fetch_failed", "url": "https://www.costanavarino.com/weddings-greece/", "error": "tool failed after 5 attempts: 403 Client Error: Forbidden for url: https://www.costanavarino.com/weddings-greece/"}
+{"ts": "2026-07-31T13:31:51.733468+00:00", "step": 169, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:51.733980+00:00", "step": 169, "event": "filtered_non_venue", "url": "https://www.the12events.com/peloponnese-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:31:52.466136+00:00", "step": 170, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:31:59.237375+00:00", "step": 171, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:32:04.754337+00:00", "step": 172, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:32:04.755741+00:00", "step": 172, "event": "scored", "url": "https://www.sampatikisuites.com/wedding-venue/", "decision": "escalate", "score": 0.55, "confidence": 0.45, "model_confidence": 0.45, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:32:05.550919+00:00", "step": 173, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:32:13.680463+00:00", "step": 174, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:32:28.256361+00:00", "step": 175, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:32:28.259375+00:00", "step": 175, "event": "scored", "url": "https://www.rivieraolympia.com/weddings.html", "decision": "escalate", "score": 0.55, "confidence": 0.5, "model_confidence": 0.5, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:32:28.267517+00:00", "step": 175, "event": "checkpoint_saved"}
+{"ts": "2026-07-31T13:34:00.008582+00:00", "step": 175, "event": "region_search", "region": "Portugal", "n_results": 50}
+{"ts": "2026-07-31T13:34:01.372248+00:00", "step": 176, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:34:01.372713+00:00", "step": 176, "event": "filtered_non_venue", "url": "https://www.lisbonweddingplanner.com/my-vintage-wedding-in-portugal", "classification": "vendor"}
+{"ts": "2026-07-31T13:34:02.184439+00:00", "step": 177, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:34:08.574778+00:00", "step": 178, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:34:22.422326+00:00", "step": 179, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:34:22.423621+00:00", "step": 179, "event": "scored", "url": "https://myvintageweddingportugal.com/", "decision": "escalate", "score": 0.55, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:34:23.731554+00:00", "step": 180, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:34:30.576214+00:00", "step": 181, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:34:34.571283+00:00", "step": 182, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:34:34.572848+00:00", "step": 182, "event": "scored", "url": "https://www.quintadabichinha.pt/en/", "decision": "escalate", "score": 0.35, "confidence": 0.4, "model_confidence": 0.4, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:34:35.408619+00:00", "step": 183, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:34:44.027533+00:00", "step": 184, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:34:44.029251+00:00", "step": 184, "event": "grounding_failed", "url": "https://quintadaconceicao.pt/", "flags": ["capacity 300 appears on the page, but not as a guest count"], "pricing_signal": "unknown", "capacity_max": null}
+{"ts": "2026-07-31T13:34:50.431476+00:00", "step": 185, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:34:50.436698+00:00", "step": 185, "event": "scored", "url": "https://quintadaconceicao.pt/", "decision": "escalate", "score": 0.45, "confidence": 0.35, "model_confidence": 0.4, "must_haves": {"met": 1, "unknown": 2}}
+{"ts": "2026-07-31T13:34:51.091799+00:00", "step": 186, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:34:56.915701+00:00", "step": 187, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:35:02.568159+00:00", "step": 188, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:35:02.569414+00:00", "step": 188, "event": "scored", "url": "https://www.quintadesantana.com/wedding/", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"unknown": 2, "met": 1}}
+{"ts": "2026-07-31T13:35:05.264243+00:00", "step": 189, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:35:09.725364+00:00", "step": 190, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:35:19.905551+00:00", "step": 191, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:35:19.907242+00:00", "step": 191, "event": "scored", "url": "https://www.my-destination-wedding-portugal.com/quinta-do-torneiro", "decision": "recommend", "score": 0.85, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:35:27.391103+00:00", "step": 192, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:35:27.392996+00:00", "step": 192, "event": "email_drafted", "url": "https://www.my-destination-wedding-portugal.com/quinta-do-torneiro", "references": "The manor house features historical Portuguese tiles nearly 300 years old, with the Noble Room uniquely decorated in green tiles matching its green ceiling."}
+{"ts": "2026-07-31T13:35:28.286262+00:00", "step": 193, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:35:34.103598+00:00", "step": 194, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:35:46.005893+00:00", "step": 195, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:35:46.009243+00:00", "step": 195, "event": "scored", "url": "https://myvintageweddingportugal.com/weddings", "decision": "escalate", "score": 0.35, "confidence": 0.45, "model_confidence": 0.45, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:35:46.009656+00:00", "step": 195, "event": "duplicate_skipped", "url": "https://www.quintasgoncalo.com/en/", "name": "Events and Destination Weddings in Lisbon, Portugal", "region": "Portugal", "duplicate_of": "https://www.quintadabichinha.pt/en/", "first_seen_region": "Portugal", "matched_by": "name"}
+{"ts": "2026-07-31T13:35:46.921285+00:00", "step": 196, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:35:46.921837+00:00", "step": 196, "event": "filtered_non_venue", "url": "https://wezoree.com/inspiration/sintra-wedding-venues-palaces-gardens-historic-estates/", "classification": "listicle"}
+{"ts": "2026-07-31T13:35:47.618016+00:00", "step": 197, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:35:52.514408+00:00", "step": 198, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:36:04.342720+00:00", "step": 199, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:36:04.344340+00:00", "step": 199, "event": "scored", "url": "https://www.ritzcarlton.com/en/hotels/lisrz-penha-longa-resort/weddings/", "decision": "escalate", "score": 0.5, "confidence": 0.85, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:36:05.584278+00:00", "step": 200, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:05.584781+00:00", "step": 200, "event": "filtered_non_venue", "url": "https://www.lisbonweddingplanner.com/monserrate-palace-venue-portugal", "classification": "vendor"}
+{"ts": "2026-07-31T13:36:07.166696+00:00", "step": 201, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:07.167292+00:00", "step": 201, "event": "filtered_non_venue", "url": "https://www.lisbonweddingplanner.com/pena-palace-wedding-venue-portugal", "classification": "vendor"}
+{"ts": "2026-07-31T13:36:08.665757+00:00", "step": 202, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:08.666208+00:00", "step": 202, "event": "filtered_non_venue", "url": "https://kissandtell.com/locations/valverde-sintra-palacio-de-seteais", "classification": "vendor"}
+{"ts": "2026-07-31T13:36:09.348976+00:00", "step": 203, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:09.349558+00:00", "step": 203, "event": "filtered_non_venue", "url": "https://inthefable.com/2026/05/21/wedding-venues-in-sintra-portugal/", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:10.107634+00:00", "step": 204, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:10.108072+00:00", "step": 204, "event": "filtered_non_venue", "url": "https://jesuscaballero.com/portugal-wedding-venues/", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:11.165102+00:00", "step": 205, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:17.543241+00:00", "step": 206, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:36:23.459463+00:00", "step": 207, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:36:23.460386+00:00", "step": 207, "event": "scored", "url": "https://www.granderealvillaitalia.realhotelsgroup.com/meetings-and-events-in-cascais/weddings/", "decision": "escalate", "score": 0.6, "confidence": 0.5, "model_confidence": 0.5, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:36:24.256549+00:00", "step": 208, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:30.276434+00:00", "step": 209, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:36:35.186082+00:00", "step": 210, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:36:35.186851+00:00", "step": 210, "event": "scored", "url": "https://www.lisbonweddingplanner.com/casa-santa-marta-wedding-venue", "decision": "escalate", "score": 0.35, "confidence": 0.3, "model_confidence": 0.3, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:36:36.330232+00:00", "step": 211, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:36.330453+00:00", "step": 211, "event": "filtered_non_venue", "url": "https://www.tripadvisor.com/HotelsList-Cascais-Wedding-Hotels-zfp14930601.html", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:37.380691+00:00", "step": 212, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:37.381203+00:00", "step": 212, "event": "filtered_non_venue", "url": "https://www.lisbonweddingplanner.com/portugal-wedding-venues", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:38.081811+00:00", "step": 213, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:43.165477+00:00", "step": 214, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:36:48.941905+00:00", "step": 215, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:36:48.943174+00:00", "step": 215, "event": "scored", "url": "https://www.weddingvenuesportugal.com/forte-da-cruz-wedding-venue-photos", "decision": "escalate", "score": 0.4, "confidence": 0.35, "model_confidence": 0.35, "must_haves": {"unknown": 2, "met": 1}}
+{"ts": "2026-07-31T13:36:50.549740+00:00", "step": 216, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:50.550036+00:00", "step": 216, "event": "filtered_non_venue", "url": "https://antonmislawsky.com/bridal-blog/list-of-30-portugal-wedding-venues-vineyards", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:51.533381+00:00", "step": 217, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:51.535333+00:00", "step": 217, "event": "filtered_non_venue", "url": "https://www.yourhappymoments.net/luxury-wedding-venues-in-cascais-best-locations-for-a-dreamy-oceanfront-wedding/", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:52.769027+00:00", "step": 218, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:52.769531+00:00", "step": 218, "event": "filtered_non_venue", "url": "https://www.morazzo.com/palace-seaview-wedding-cascais-portugal-anabela-michele.html", "classification": "irrelevant"}
+{"ts": "2026-07-31T13:36:55.948785+00:00", "step": 219, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:36:55.949187+00:00", "step": 219, "event": "filtered_non_venue", "url": "https://www.travelocity.com/Cascais-Hotels-Wedding-Hotels.0-0-d4896-tWeddingHotels.Travel-Guide-Filter-Hotels", "classification": "listicle"}
+{"ts": "2026-07-31T13:36:56.765555+00:00", "step": 220, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:04.351068+00:00", "step": 221, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:37:09.471140+00:00", "step": 222, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:37:09.471872+00:00", "step": 222, "event": "scored", "url": "https://quintadosvales.pt/en/wedding-venue-algarve/", "decision": "escalate", "score": 0.65, "confidence": 0.55, "model_confidence": 0.55, "must_haves": {"met": 2, "unknown": 1}}
+{"ts": "2026-07-31T13:37:10.535956+00:00", "step": 223, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:10.536719+00:00", "step": 223, "event": "filtered_non_venue", "url": "https://www.luxuryweddings.co.uk/wedding-inspiration/best-wedding-venues-in-portugals-algarve", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:11.259116+00:00", "step": 224, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:11.259460+00:00", "step": 224, "event": "filtered_non_venue", "url": "https://www.wedinspire.com/articles/destination/best-wedding-venues-in-portugals-algarve/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:12.247612+00:00", "step": 225, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:28.517591+00:00", "step": 225, "event": "fetch_failed", "url": "https://www.viceroyhotelsandresorts.com/ombria-algarve/gather/weddings", "error": "tool failed after 5 attempts: 403 Client Error: Forbidden for url: https://www.viceroyhotelsandresorts.com/ombria-algarve/gather/weddings-old-version"}
+{"ts": "2026-07-31T13:37:29.646276+00:00", "step": 226, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:29.646643+00:00", "step": 226, "event": "filtered_non_venue", "url": "https://www.lsfilmmaker.com/top-wedding-venues-algarve", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:30.360327+00:00", "step": 227, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:30.361682+00:00", "step": 227, "event": "filtered_non_venue", "url": "https://www.algarvemarquees.com/the-best-wedding-venues-in-the-algarve/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:31.719021+00:00", "step": 228, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:31.719498+00:00", "step": 228, "event": "filtered_non_venue", "url": "https://www.wedawai.com/all-areas/portugal-courtyard-wedding-venue", "classification": "vendor"}
+{"ts": "2026-07-31T13:37:32.520521+00:00", "step": 229, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:32.520985+00:00", "step": 229, "event": "filtered_non_venue", "url": "https://eventboutique.pt/locations/douro-valley/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:33.265185+00:00", "step": 230, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:33.265604+00:00", "step": 230, "event": "filtered_non_venue", "url": "https://www.greatwinecapitals.com/wine-stories/the-ultimate-vineyard-wedding-destination-love-wine-in-portos-great-wine-capital/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:33.990264+00:00", "step": 231, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:33.991012+00:00", "step": 231, "event": "filtered_non_venue", "url": "https://junebugweddings.com/wedding-blog/?p=842644", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:35.332723+00:00", "step": 232, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:35.332909+00:00", "step": 232, "event": "filtered_non_venue", "url": "https://www.amorprasempre.com/the-top-7-wedding-venues-in-douro-valley/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:36.376303+00:00", "step": 233, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:36.376778+00:00", "step": 233, "event": "filtered_non_venue", "url": "https://www.loungefoto.com/blog-de-fotografia/top-wedding-venues-in-douro-valley-for-your-destination-wedding-in-portugal/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:38.068484+00:00", "step": 234, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:38.069351+00:00", "step": 234, "event": "filtered_non_venue", "url": "https://www.amorprasempre.com/why-quinta-da-pacheca-is-a-dream-wedding-venue-in-portugal/", "classification": "listicle"}
+{"ts": "2026-07-31T13:37:38.926358+00:00", "step": 235, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:37:51.503397+00:00", "step": 236, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:37:51.505957+00:00", "step": 236, "event": "grounding_failed", "url": "https://www.wedinspire.com/wedding-venues/northern-portugal/six-senses-douro-valley/", "flags": ["price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 142}
+{"ts": "2026-07-31T13:37:59.695147+00:00", "step": 237, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:37:59.697357+00:00", "step": 237, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/northern-portugal/six-senses-douro-valley/", "decision": "recommend", "score": 0.75, "confidence": 0.9, "model_confidence": 0.9, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:38:05.274321+00:00", "step": 238, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:38:05.276815+00:00", "step": 238, "event": "email_drafted", "url": "https://www.wedinspire.com/wedding-venues/northern-portugal/six-senses-douro-valley/", "references": "vows typically overlooking the river and dancing continuing under the stars"}
+{"ts": "2026-07-31T13:38:05.971774+00:00", "step": 239, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:12.345981+00:00", "step": 240, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:38:12.348627+00:00", "step": 240, "event": "grounding_failed", "url": "https://marrytheworld.com/venue/six-senses-douro-valley/", "flags": ["price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 250}
+{"ts": "2026-07-31T13:38:24.681478+00:00", "step": 241, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:38:24.682764+00:00", "step": 241, "event": "scored", "url": "https://marrytheworld.com/venue/six-senses-douro-valley/", "decision": "recommend", "score": 0.8, "confidence": 0.85, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:38:28.749492+00:00", "step": 242, "event": "model_call", "tag": "email", "attempt": 0}
+{"ts": "2026-07-31T13:38:28.751185+00:00", "step": 242, "event": "email_drafted", "url": "https://marrytheworld.com/venue/six-senses-douro-valley/", "references": "over 80 guests requires full exclusive hire of the estate for at least 2 nights"}
+{"ts": "2026-07-31T13:38:29.808158+00:00", "step": 243, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:29.808524+00:00", "step": 243, "event": "filtered_non_venue", "url": "https://www.pedropulidophotography.com/portugal-wedding-venues-hidden-gems/", "classification": "listicle"}
+{"ts": "2026-07-31T13:38:30.741190+00:00", "step": 244, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:34.114568+00:00", "step": 245, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:38:38.999452+00:00", "step": 246, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:38:39.000109+00:00", "step": 246, "event": "scored", "url": "https://www.wedinspire.com/wedding-venues/alentejo/sublime-comporta/", "decision": "escalate", "score": 0.3, "confidence": 0.2, "model_confidence": 0.2, "must_haves": {"unknown": 3}}
+{"ts": "2026-07-31T13:38:41.364623+00:00", "step": 247, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:41.365080+00:00", "step": 247, "event": "filtered_non_venue", "url": "https://thewhiteedit.com/find-a-venue/sublime-comporta-grandola-comporta/", "classification": "vendor"}
+{"ts": "2026-07-31T13:38:43.349367+00:00", "step": 248, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:43.349912+00:00", "step": 248, "event": "filtered_non_venue", "url": "https://thewhiteedit.com/find-a-venue/quinta-da-comporta-wellness-boutique-resort-alentejo-portugal-wedding-venue/", "classification": "listicle"}
+{"ts": "2026-07-31T13:38:46.058863+00:00", "step": 249, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:46.060175+00:00", "step": 249, "event": "filtered_non_venue", "url": "https://www.muzaweddings.com/blog/sublime-comporta----the-ultimate-venue-for-your-destination-wedding-in-portugal", "classification": "listicle"}
+{"ts": "2026-07-31T13:38:46.761417+00:00", "step": 250, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:46.761712+00:00", "step": 250, "event": "filtered_non_venue", "url": "https://www.muzaweddings.com/blog/modern-wedding-venues-in-comporta", "classification": "listicle"}
+{"ts": "2026-07-31T13:38:47.480127+00:00", "step": 251, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:38:56.308422+00:00", "step": 252, "event": "model_call", "tag": "extract", "attempt": 0}
+{"ts": "2026-07-31T13:38:56.312055+00:00", "step": 252, "event": "grounding_failed", "url": "https://marrytheworld.com/venue/sublime-comporta/", "flags": ["price 60000 does not appear in its own source quote", "price_source_quote is not about a wedding or event", "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"], "pricing_signal": "request_only", "capacity_max": 200}
+{"ts": "2026-07-31T13:39:03.249347+00:00", "step": 253, "event": "model_call", "tag": "score", "attempt": 0}
+{"ts": "2026-07-31T13:39:03.250741+00:00", "step": 253, "event": "scored", "url": "https://marrytheworld.com/venue/sublime-comporta/", "decision": "escalate", "score": 0.85, "confidence": 0.75, "model_confidence": 0.85, "must_haves": {"met": 3}}
+{"ts": "2026-07-31T13:39:04.939133+00:00", "step": 254, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:39:04.939724+00:00", "step": 254, "event": "filtered_non_venue", "url": "https://www.blo-weddingstudio.com/weddings/erica-kyle", "classification": "vendor"}
+{"ts": "2026-07-31T13:39:06.068439+00:00", "step": 255, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:39:06.068924+00:00", "step": 255, "event": "filtered_non_venue", "url": "https://bernadetakupiec.co.uk/fine-art-alentejo-wedding-photographer-how-to-get-married-in-alentejo-portugal/", "classification": "vendor"}
+{"ts": "2026-07-31T13:39:09.148913+00:00", "step": 256, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:39:09.149608+00:00", "step": 256, "event": "filtered_non_venue", "url": "https://thelane.com/portugal-wedding-venue/", "classification": "listicle"}
+{"ts": "2026-07-31T13:39:09.838359+00:00", "step": 257, "event": "model_call", "tag": "classify", "attempt": 0}
+{"ts": "2026-07-31T13:39:09.838864+00:00", "step": 257, "event": "filtered_non_venue", "url": "https://thewed.com/magazine/best-wedding-venues-in-portugal", "classification": "listicle"}
+{"ts": "2026-07-31T13:39:09.851563+00:00", "step": 257, "event": "checkpoint_saved"}
+{"ts": "2026-07-31T13:39:09.854825+00:00", "step": 257, "event": "run_finished", "mode": "real", "region_results": {"Italy": 50, "Greece": 50, "Portugal": 50}, "empty_regions": [], "regions": 3, "venues_evaluated": 50, "recommended": 6, "escalated": 43, "duplicates_collapsed": 1, "steps": 257, "cost": {"calls": 257, "tokens_in": 398391, "tokens_out": 58145, "usd_total": 1.9683, "by_model": {"claude-haiku-4-5-20251001": {"calls": 149, "in": 24899, "out": 4028, "usd": 0.036}, "claude-sonnet-5": {"calls": 108, "in": 373492, "out": 54117, "usd": 1.9322}}}, "cost_per_venue_usd": 0.0394}

@@ -56,13 +56,39 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 CRITERIA_PATH = os.path.join(ROOT, "criteria.json")
 DASHBOARD_PATH = os.path.join(ROOT, "out", "dashboard.html")
 RUNS_DIR = os.path.join(ROOT, "runs")
+# A committed snapshot of one real run, used only when runs/ is empty (a fresh
+# deploy). Contact emails are stripped from it -- see demo/README.md.
+DEMO_DIR = os.path.join(ROOT, "demo")
 
-# Loopback only. "localhost" resolves to 127.0.0.1 (and ::1) -- it is the same
-# machine-only binding, just the nicer URL. Overridable, but do not point this
-# at 0.0.0.0: there is no auth, so a routable interface would publish your
-# criteria and a send button to the network.
-HOST = os.environ.get("CRITERIA_SERVER_HOST", "localhost")
-PORT = int(os.environ.get("CRITERIA_SERVER_PORT", "8420"))
+# --- read-only demo mode --------------------------------------------------
+# This server has no authentication. On a laptop that is fine, because the
+# socket is the boundary: only this machine can reach it. A public URL removes
+# that boundary entirely, and the three POST routes are exactly the ones you
+# would not want a stranger to have -- /run spends real API credit for minutes
+# at a time, /send emails a real venue, /criteria rewrites the agent's input.
+#
+# So a public deployment runs READ-ONLY. Every GET works (that is the whole
+# demo: the dashboard, the run walkthrough, the prompts); every POST returns
+# 403. This is enforced here rather than by hiding buttons, because a hidden
+# button is not a control -- anyone can still post to the route.
+DEMO_READONLY = os.environ.get("DEMO_READONLY", "").strip().lower() in ("1", "true", "yes")
+
+# Railway (and most PaaS) inject $PORT and expect the process to bind a routable
+# interface. Binding 0.0.0.0 is only acceptable BECAUSE of DEMO_READONLY above;
+# if you set one without the other you are publishing a run button.
+_PLATFORM_PORT = os.environ.get("PORT")
+HOST = os.environ.get("CRITERIA_SERVER_HOST") or ("0.0.0.0" if _PLATFORM_PORT else "localhost")
+PORT = int(_PLATFORM_PORT or os.environ.get("CRITERIA_SERVER_PORT", "8420"))
+
+if HOST not in ("localhost", "127.0.0.1", "::1") and not DEMO_READONLY:
+    sys.exit(
+        "Refusing to start: HOST is not loopback and DEMO_READONLY is not set.\n"
+        "This server has no authentication, so a routable bind would expose\n"
+        "POST /run (spends API credit), POST /send (emails a venue) and\n"
+        "POST /criteria to anyone who finds the URL.\n\n"
+        "  For a public demo:  DEMO_READONLY=1\n"
+        "  For local use:      leave HOST unset (defaults to localhost)\n"
+    )
 # Real-mode runs are long, and deliberately unbounded in breadth: search is
 # uncapped per region and every venue found is evaluated. One live region
 # returned 25 venues, so a four-country run can be ~100 venues -- search plus
@@ -118,11 +144,26 @@ async def local_only(request: Request, call_next):
             host = urlsplit(origin).hostname
         except ValueError:
             host = None
-        if host not in LOOPBACK_HOSTS:
+        # Same-origin is always fine: on a deployed host the page the server
+        # itself served has that host in its Origin, not a loopback one, and
+        # refusing it would 403 the site's own fetches. Comparing against the
+        # request's own Host header keeps the anti-rebinding property -- a page
+        # on another domain still cannot forge this.
+        same_origin = host is not None and host == urlsplit(f"//{request.headers.get('host','')}").hostname
+        if host not in LOOPBACK_HOSTS and not same_origin:
             return JSONResponse(
                 {"detail": f"cross-origin request refused (origin {origin})"},
                 status_code=403,
             )
+
+    # Read-only demo: the socket is no longer the boundary, so the method is.
+    if DEMO_READONLY and request.method not in ("GET", "HEAD", "OPTIONS"):
+        return JSONResponse(
+            {"detail": "This is a read-only demo. Running the agent, editing "
+                       "criteria and sending inquiries are disabled here — "
+                       "clone the repo to use them."},
+            status_code=403,
+        )
     return await call_next(request)
 
 
@@ -257,6 +298,13 @@ def latest_run_dir(*, finished_only: bool = True) -> str | None:
     for d in reversed(runs):
         if os.path.exists(os.path.join(d, "report.json")):
             return d
+    # Nothing has run here. On a deployed demo that is the normal state --
+    # runs/ is git-ignored, so a fresh container has no history at all and the
+    # site would render "no dashboard yet". demo/ is a committed snapshot of a
+    # real run (contact emails stripped) so the public URL shows real results
+    # instead of an empty shell.
+    if os.path.exists(os.path.join(DEMO_DIR, "report.json")):
+        return DEMO_DIR
     return None
 
 
@@ -299,6 +347,10 @@ def _report_payload(run_dir: str | None):
     criteria = criteria_io.load(CRITERIA_PATH)
     data = dashboard.build_data(report, criteria, sending.read_sent_log())
     data["run_id"] = os.path.basename(run_dir)
+    # The page uses this to drop the write controls. The middleware is what
+    # actually enforces read-only; this just stops the demo offering buttons
+    # that would 403.
+    data["readonly"] = DEMO_READONLY
 
     # Headline the workflow, not the model-call counter. summary.steps stays as
     # it was (the agent's own count, still in the report and the audit trail);
@@ -365,6 +417,9 @@ def get_steps(run: str | None = None):
              if os.path.exists(os.path.join(d, "audit_trail.jsonl"))),
             None,
         )
+        # Same fallback as latest_run_dir(): a fresh deploy has no runs/.
+        if run_dir is None and os.path.exists(os.path.join(DEMO_DIR, "audit_trail.jsonl")):
+            run_dir = DEMO_DIR
     if not run_dir or not os.path.isdir(run_dir):
         return PlainTextResponse("No run to show yet.", status_code=404)
 

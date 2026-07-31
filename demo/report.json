@@ -1,0 +1,2778 @@
+{
+ "recommended": [
+  {
+   "record": {
+    "name": "Wedding -The location for your fairytale wedding on Lake Como",
+    "url": "https://villalarioresortmandello.com/en/wedding/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 170,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Lakefront luxury resort on Lake Como with private dock, park, gazebo, pool, and veranda",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Couples can arrive by private boat at the villa's own dock, and the wedding menu is created together with Amandus Ristorante's executive chef, Luca Mozzanica."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue explicitly states on-site lodging, indoor backup (veranda/indoor spaces), and capacity up to 170, well above the 85+ requirement and the 105 guest count. Located in Italy, satisfying region criteria. Setting (Lake Como lakefront villa with private dock, gazebo, pool) aligns strongly with the 'dramatic natural setting' nice-to-have, though it's lake rather than beach/coastal. Pricing is request-only with no figures given, so budget fit can't be confirmed but this doesn't block a recommend since no stated price exceeds ceiling. Overall this venue appears to satisfy all stated must-haves with clear, explicit evidence.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 170 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 170 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Castello di Montignano Wedding Venue, Umbria - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-montignano/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 120,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A thousand-year-old castle set atop rolling Umbrian hills, surrounded by silver-green olive groves with sweeping views over the valley, part of a restored hamlet (Borgo).",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The 'Lord of the Castle' experience includes exclusive use of the entire estate\u2014indoor heated pool with hydromassage, outdoor pool, pool park, hortus, and Pavillon\u2014plus late-night celebrations with no extra charge for dancing until dawn."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Italy (matches region), capacity is stated at 120, comfortably above the 105 guest count and the 85 minimum. On-site lodging is confirmed (exclusive use of the estate's rooms) and indoor backup is explicitly stated (heated indoor pool, Pavillon, etc.). All three must-haves are plainly satisfied, giving high confidence in the must-have verdict. Setting is a hilltop castle with valley/olive grove views \u2014 dramatic and natural, though not beachfront, so it partially satisfies the nice-to-have. Pricing is 'request only' with no numeric figures, so budget fit against the $80k ceiling cannot be verified from this record \u2014 that remains an open question to confirm directly with the venue before final booking, but it does not affect the must-have confidence per scoring rules.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 120 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.90 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 120 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Quinta Wedding at Quinta do Torneiro | Portugal | Destination Wedding",
+    "url": "https://www.my-destination-wedding-portugal.com/quinta-do-torneiro",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 250,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "18th-century historical manor house (Quinta) with chapel, multiple tiled interior rooms, gardens, and countryside/woodland, located in the Municipality of Oeiras near Lisbon, Cascais, and Sintra",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The manor house features historical Portuguese tiles nearly 300 years old that depict daily life in the 18th century, with the Noble Room uniquely decorated in green tiles matching its green ceiling."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (has_onsite_lodging: true), capacity max 250 comfortably exceeds the 105-guest requirement, and indoor backup is stated as available (multiple tiled interior rooms, chapel). Region (Portugal) matches the couple's list. Setting is a historic countryside manor rather than beachfront, so it only partially satisfies the 'nice to have' dramatic coastal setting and may read as more manor-house/countryside than the 'intimate coastal' vibe desired. Pricing is unlisted (request only), so budget fit cannot be verified from this record alone -- this doesn't lower must-have confidence per rules, but should be confirmed before final booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 250 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 250 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Six Senses Douro Valley - Wedding Venues in Portugal",
+    "url": "https://marrytheworld.com/venue/six-senses-douro-valley/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 250,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Restored 19th-century manor house estate in the UNESCO-listed Douro Valley, surrounded by vineyards, woodland and river-facing terraces",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings under 80 guests can be hosted without full exclusivity (minimum 10 rooms booked), while over 80 guests requires full exclusive hire of the estate for at least 2 nights, and vineyard suites include private terraces, outdoor hot tubs and wine fridges stocked with Douro vintages."
+   },
+   "score": 0.8,
+   "confidence": 0.85,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Portugal venue satisfies all stated must-haves: on-site lodging confirmed, indoor backup confirmed, and capacity_max of 250 comfortably exceeds the 105-guest count (the standout detail even confirms groups over 80 require full exclusive hire, implying the venue readily accommodates this size). Setting is dramatic and natural (vineyard/river valley, restored manor), fitting the intimate coastal-adjacent, non-ballroom vibe, though it's a river valley rather than beachfront. Pricing is request-only with no figures given, so budget fit against the $80k ceiling cannot be confirmed \u2014 this is a luxury Six Senses property and likely runs high, but since no price was stated we cannot disqualify on cost; a human should verify pricing before booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 250 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 250 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "The Courti Estate: The Perfect Corfu Wedding Venue",
+    "url": "https://www.thecourtiestate.com/corfu-wedding-venue/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": 500,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Private luxury estate in Corfu with expansive grounds, suitable for both intimate and large outdoor weddings",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Elegant indoor option accommodates up to 120 guests as an all-weather alternative, avoiding the cost and uncertainty of marquee hire; the estate has also hosted events ranging from small weddings to private rock concerts for up to 500 guests."
+   },
+   "score": 0.75,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (has_onsite_lodging=true), indoor weather backup (dedicated indoor space for up to 120 guests, explicitly avoiding marquee uncertainty), and capacity well above the 105 guest count (outdoor up to 500, indoor backup up to 120). Region matches (Greece/Corfu). Price is unlisted so it cannot be confirmed against the $80k ceiling, but that absence doesn't affect must-have confidence per scoring rules. Some vibe concern: the estate's history of hosting large events (up to 500 guests, rock concerts) suggests it may skew toward a grander, more commercial feel than the 'intimate, not big-box' vibe the couple wants, and beachfront/dramatic natural setting is not explicitly confirmed (only 'expansive grounds' mentioned). These are nice-to-have/vibe concerns, not must-have failures, so decision leans recommend but a human should verify vibe fit and pricing.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 500 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 500 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Six Senses Douro Valley Wedding Venue, Northern Portugal - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/northern-portugal/six-senses-douro-valley/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 142,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "19th century manor with terraced vineyards along the Douro river in Northern Portugal",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Ceremony spaces range from vineyard viewpoints to elegant gardens enriched with herbs, with vows typically overlooking the river and dancing continuing under the stars."
+   },
+   "score": 0.75,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (yes), capacity up to 142 (exceeds the 105 guest count and the 85 minimum), and indoor backup (yes). Region matches Portugal. However, this is a river/vineyard setting in the Douro Valley, not coastal or beachfront, so it only partially satisfies the 'nice to have' dramatic natural setting and doesn't match the 'coastal' vibe preference. Pricing is request-only with no figures given, so budget fit cannot be verified, though this alone doesn't disqualify per rules since no stated price exceeds ceiling.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 142 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.90 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 142 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  }
+ ],
+ "escalations": [
+  {
+   "url": "https://www.lalista.com/venues/tuscany/villa-pozzolo",
+   "name": "Wedding Venue Tuscany, Villa Pozzolo \u2014 La Lista",
+   "reason": "unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.75)"
+  },
+  {
+   "url": "https://www.villagiulia-alterrazzo.com/en/lake-como-wedding-venue/",
+   "name": "Villa Giulia - Lake Como wedding location and venue - Historical Villa",
+   "reason": "Villa Giulia is in Italy (matches region), has on-site lodging, and its main veranda can seat up to 180 guests, comfortably covering the 105-guest requirement. However, the stated indoor backup (inner rooms with frescoes) only accommodates 30-35 guests, far short of the 105-person group, so it's unclear whether adequate weather backup exists for the full guest count. Pricing is unlisted, so budget fit cannot be confirmed but isn't disqualifying. Lake Como setting is scenic but not coastal/beachfront as preferred, and the grand veranda for 180 may not match the 'intimate' vibe sought. Given the indoor-backup capacity gap, this should be escalated for clarification rather than outright recommended. (confidence 0.55)"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/lake-como/villa-balbiano/",
+   "name": "Villa Balbiano for Weddings on Lake Como",
+   "reason": "cannot confirm: indoor backup for weather; unsupported claims: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.55)"
+  },
+  {
+   "url": "https://www.lakegardaweddings.com/wedding-locations/malcesine-castle",
+   "name": "Malcesine Castle - Lake Garda Weddings",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; unsupported claims: capacity 100 does not appear anywhere on the page (confidence 0.35)"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-petrata/",
+   "name": "Castello di Petrata Wedding Venue, Umbria - Wedinspire",
+   "reason": "unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.75)"
+  },
+  {
+   "url": "https://thewhiteedit.com/find-a-venue/castello-di-petrata-umbria/",
+   "name": "Castello di Petrata Wedding Venue, Umbria, Italy | 2027 Prices",
+   "reason": "unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.65)"
+  },
+  {
+   "url": "https://www.weddings.castellopetrata.com/",
+   "name": "Luxury Destination Weddings in Italy | Castello di Petrata, Umbria",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.50)"
+  },
+  {
+   "url": "https://www.weddings.castellopetrata.com/venue",
+   "name": "Destination Wedding Venue in Italy | Luxury Castle in Umbria",
+   "reason": "On-site lodging (22 rooms/suites + 20 glamping tents) and indoor backup (restored fortress) are both clearly confirmed, satisfying two must-haves. However, capacity_max is stated as 100, which is below the couple's actual guest_count of 105 \u2014 even though it clears the stated 85-person threshold, it cannot confirmably host the full guest list. This is a real capacity risk that should be verified directly with the venue before booking. Pricing is unknown but not disqualifying since no ceiling was breached. Setting (Umbrian castle/estate, valley views) fits the 'intimate, natural, not a ballroom' vibe well, though it's not coastal/beachfront as the nice-to-have specifies. (confidence 0.55)"
+  },
+  {
+   "url": "https://www.roccofortehotels.com/hotels-and-resorts/masseria-torre-maizza/groups-weddings/",
+   "name": "Luxury Wedding Venue in Puglia | Masseria Torre Maizza",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.45)"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-alchimia/",
+   "name": "Masseria Alchimia Wedding Venue, Puglia - Wedinspire",
+   "reason": "unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.75)"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-spina/",
+   "name": "Masseria Spina Wedding Venue, Puglia - Wedinspire",
+   "reason": "cannot confirm: indoor backup for weather; unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.55)"
+  },
+  {
+   "url": "https://www.cavoventus.com/",
+   "name": "Cavo Ventus - Wedding Venue in Santorini",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.20)"
+  },
+  {
+   "url": "https://leciel-santorini.com/",
+   "name": "Best Destination Luxury Wedding Venue In Santorini, Greece",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.45)"
+  },
+  {
+   "url": "https://elviento-santorini.com/",
+   "name": "El Viento Luxury Weddings & Events",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather (confidence 0.35)"
+  },
+  {
+   "url": "https://www.fourseasons.com/mykonos/weddings/",
+   "name": "Luxury Mykonos Weddings | Destination | Four Seasons Hotel Mykonos",
+   "reason": "page unreachable"
+  },
+  {
+   "url": "https://hippiefish-mykonos.com/wedding-venue-mykonos/",
+   "name": "Wedding Venue in Mykonos - Hippie Fish",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.15)"
+  },
+  {
+   "url": "https://www.amazonmykonos.com/weddings/",
+   "name": "Weddings | Amazon Mykonos Resorts & Spa",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.50)"
+  },
+  {
+   "url": "https://www.myoverseaswedding.com/wedding-destinations/greece/royal-myconian",
+   "name": "Royal Myconian | Greece Destination Wedding Venues & Packages | My Overseas Wedding",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather (confidence 0.35)"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/crete/villa-fuerte-weddings-estate/",
+   "name": "Villa Fuerte & Weddings Estate Wedding Venue, Crete - Wedinspire",
+   "reason": "cannot confirm: indoor backup for weather; unsupported claims: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.55)"
+  },
+  {
+   "url": "https://www.ktimareveli.gr/",
+   "name": "Wedding Venue - Reveli Venue & Villas",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather (confidence 0.35)"
+  },
+  {
+   "url": "https://rhodes-weddings-venue.com/",
+   "name": "Rhodes Weddings Venue | Luxury Wedding Events in Rhodes",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.45)"
+  },
+  {
+   "url": "https://www.rhodeslanding.com/",
+   "name": "Rhodes Landing | Wedding and Event Venue | 6400 Alabama 157, Florence, AL, USA",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.20)"
+  },
+  {
+   "url": "https://www.rhodesweddingservices.com/ceremony-venues/ceremony-venue-town-hall",
+   "name": "Rhodes Ceremony Venue Town Hall",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.45)"
+  },
+  {
+   "url": "https://www.angsana.com/greece/corfu/weddings-honeymoons",
+   "name": "Corfu Wedding Venues | Angsana Corfu Resort & Spa",
+   "reason": "page unreachable"
+  },
+  {
+   "url": "https://www.villasylva.com/",
+   "name": "Villa Sylva Corfu | Luxury Beachfront Villa & Wedding Venue in Greece",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.45)"
+  },
+  {
+   "url": "https://thewhiteedit.com/find-a-venue/danilia-village-corfu/",
+   "name": "Danilia Village, Corfu Wedding Venue - The White Edit",
+   "reason": "unsupported claims: price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.65)"
+  },
+  {
+   "url": "https://ekateriniestatecorfu.com/weddings",
+   "name": "WEDDINGS \u2014 Ekaterini Estate",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather (confidence 0.35)"
+  },
+  {
+   "url": "https://www.costanavarino.com/weddings-greece/",
+   "name": "Wedding Venues in Peloponnese - Greece | Costa Navarino",
+   "reason": "page unreachable"
+  },
+  {
+   "url": "https://www.sampatikisuites.com/wedding-venue/",
+   "name": "Sampatiki Suites | Your dream wedding venue in the Peloponnese",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.45)"
+  },
+  {
+   "url": "https://www.rivieraolympia.com/weddings.html",
+   "name": "Weddings in Peloponnese | Riviera Olympia & Aqua Park",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.50)"
+  },
+  {
+   "url": "https://myvintageweddingportugal.com/",
+   "name": "My Vintage Wedding in Portugal - The Quinta - The Quinta since 1817",
+   "reason": "Venue satisfies the Italy/Greece/Portugal region requirement (Portugal), has a stated capacity (150) that comfortably covers the 105-guest count, and explicitly offers indoor backup. However, the 'on-site lodging' flag is contradicted by the standout detail: the Manor House and guest house together sleep only ~20 guests, far short of the 105 total \u2014 so on-site lodging for the full group is not actually confirmed, just for a small subset. Pricing is entirely unknown, so budget fit (\u2264$80k) cannot be verified, though per rules that alone isn't disqualifying. The mismatch between the lodging capacity and guest count is a genuine ambiguity that should be human-verified before booking. (confidence 0.55)"
+  },
+  {
+   "url": "https://www.quintadabichinha.pt/en/",
+   "name": "Events and Destination Weddings in Lisbon, Portugal",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather (confidence 0.40)"
+  },
+  {
+   "url": "https://quintadaconceicao.pt/",
+   "name": "Quinta da Concei\u00e7\u00e3o, Historic Country Retreat | Hidden gem luxury wedding venue",
+   "reason": "cannot confirm: capacity for at least 85; indoor backup for weather; unsupported claims: capacity 300 appears on the page, but not as a guest count (confidence 0.35)"
+  },
+  {
+   "url": "https://www.quintadesantana.com/wedding/",
+   "name": "Vineyard Wedding Venues | Quinta de Sant'Ana -Portugal",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85 (confidence 0.35)"
+  },
+  {
+   "url": "https://myvintageweddingportugal.com/weddings",
+   "name": "My Vintage Wedding in Portugal - The Quinta - Your Vintage Wedding at The QuintaThe perfect Vintage Wedding Venue for your Destination Wedding in Portugal",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.45)"
+  },
+  {
+   "url": "https://www.ritzcarlton.com/en/hotels/lisrz-penha-longa-resort/weddings/",
+   "name": "Wedding Venues in Sintra, Portugal | The Ritz-Carlton, Penha Longa",
+   "reason": "All three must-haves appear satisfied by the page: on-site lodging (resort with rooms), indoor backup (large restored ballroom, chapel with no time/weather limits), and capacity (up to 700, well above the 105 guest count). Region (Portugal) matches. However, this is a massive luxury resort with a 700-person ballroom and monastery/palace grounds \u2014 the opposite of the couple's stated 'intimate, natural, not a big-box resort ballroom' vibe, and there's no beachfront/dramatic natural setting cue, just gardens and mountains. Pricing is completely unlisted, so budget fit (ceiling $80k) is unverified and a real risk given Ritz-Carlton positioning. Must-have verdict is high-confidence, but overall fit is weak due to vibe mismatch and unknown pricing. (confidence 0.85)"
+  },
+  {
+   "url": "https://www.granderealvillaitalia.realhotelsgroup.com/meetings-and-events-in-cascais/weddings/",
+   "name": "Elegant wedding in a 5-star hotel in Cascais - Grande Real Villa It\u00e1lia Hotel",
+   "reason": "cannot confirm: capacity for at least 85 (confidence 0.50)"
+  },
+  {
+   "url": "https://www.lisbonweddingplanner.com/casa-santa-marta-wedding-venue",
+   "name": "Wedding Villa Portugal",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.30)"
+  },
+  {
+   "url": "https://www.weddingvenuesportugal.com/forte-da-cruz-wedding-venue-photos",
+   "name": "Forte da Cruz Gallery | Estoril - Cascais | Wedding Venues Portugal",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85 (confidence 0.35)"
+  },
+  {
+   "url": "https://quintadosvales.pt/en/wedding-venue-algarve/",
+   "name": "Wedding Venue Algarve | Wedding Location | Quinta dos Vales",
+   "reason": "cannot confirm: indoor backup for weather (confidence 0.55)"
+  },
+  {
+   "url": "https://www.viceroyhotelsandresorts.com/ombria-algarve/gather/weddings",
+   "name": "Luxury Algarve Wedding Venue | Viceroy Ombria Algarve",
+   "reason": "page unreachable"
+  },
+  {
+   "url": "https://www.wedinspire.com/wedding-venues/alentejo/sublime-comporta/",
+   "name": "Sublime Comporta Wedding Venue, Alentejo - Wedinspire",
+   "reason": "cannot confirm: on-site lodging for guests; capacity for at least 85; indoor backup for weather (confidence 0.20)"
+  },
+  {
+   "url": "https://marrytheworld.com/venue/sublime-comporta/",
+   "name": "Sublime Comporta - Wedding Venues in Portugal",
+   "reason": "unsupported claims: price 60000 does not appear in its own source quote; price_source_quote is not about a wedding or event; price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion (confidence 0.75)"
+  }
+ ],
+ "duplicates": [
+  {
+   "url": "https://www.quintasgoncalo.com/en/",
+   "name": "Events and Destination Weddings in Lisbon, Portugal",
+   "region": "Portugal",
+   "duplicate_of": "https://www.quintadabichinha.pt/en/",
+   "first_seen_region": "Portugal",
+   "matched_by": "name"
+  }
+ ],
+ "all_scored": [
+  {
+   "record": {
+    "name": "Weddings in Tuscany | Villa La Selva \u2013 Romantic Historic Venue",
+    "url": "https://villalaselva.it/en/weddings/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 50,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Historic Tuscan countryside estate in Val d'Ambra, once a Medici country villa, featuring gardens, terraces, and a private chapel",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The estate includes a small historic family chapel, the Church of Santa Maria in Selvamaggio, and a vaulted-ceiling Ceremony Hall alongside a wine cellar bar (La Barriccaia) for receptions."
+   },
+   "score": 0.15,
+   "confidence": 0.9,
+   "disqualified": true,
+   "disqualify_reason": "capacity_max of 50 is well below the required guest count of 105",
+   "rationale": "Villa La Selva is a charming historic Tuscan estate with on-site lodging and indoor backup (Ceremony Hall, chapel), which satisfies two must-haves. However, its stated maximum capacity of 50 guests falls far short of the couple's 105-guest requirement, a hard must-have failure. This is a clear reject on capacity grounds regardless of price (unknown) or setting fit.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [-] capacity for at least 85 -- stated capacity 50 < 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model); evidence ceiling 0.90 (pricing not addressed on the page)\n  Decision: reject -- unmet must-have: capacity for at least 85 (stated capacity 50 < 85)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unmet",
+     "evidence": "stated capacity 50 < 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "reject"
+  },
+  {
+   "record": {
+    "name": "Wedding Venue Tuscany, Villa Pozzolo \u2014 La Lista",
+    "url": "https://www.lalista.com/venues/tuscany/villa-pozzolo",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 120,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "40-hectare Tuscan estate with gardens and forest near Montaione, featuring a renaissance chapel, courtyard, heated saltwater pool, open-air dance floor, and Winter garden",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The villa is rented exclusively to one group at a time, with meals tailored by chef Niko to the tastes of the group and unlimited Chianti wine, Prosecco, sparkling water and Italian coffee included."
+   },
+   "score": 0.78,
+   "confidence": 0.75,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue plainly states capacity up to 120 (covers the 105-guest count and the 85 minimum), on-site lodging, and indoor backup (Winter garden) \u2014 all three must-haves are explicitly satisfied. Region (Italy) fits. Vibe aligns well: exclusive single-group rental of a 40-hectare estate feels intimate and natural, not a big-box ballroom. However, the nice-to-have of a beachfront/dramatic coastal setting is not met \u2014 this is an inland Tuscan countryside estate, not coastal. Price is undisclosed (request_only), so budget fit cannot be confirmed but this alone doesn't disqualify since no figure exceeds the ceiling; it should be escalated for a quote before final booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 120 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.75, capped at 0.75: extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 120 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Villa Pizzo: Destination Weddings in Lake Como | Exclusive Italy Weddings",
+    "url": "https://www.exclusiveitalyweddings.com/villa-pizzo-for-weddings-on-lake-como",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 150,
+    "has_onsite_lodging": false,
+    "has_indoor_backup": true,
+    "setting": "Private lakeside villa with terraced gardens descending to the shore of Lake Como, in Cernobbio near Como and Moltrasio",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Features the historic stone dock called the Darsena, a two-level terrace on the water used for symbolic ceremonies, and has hosted celebrity weddings including John Legend and Chrissy Teigen's, with guests like Kanye West and Stevie Wonder."
+   },
+   "score": 0.3,
+   "confidence": 0.85,
+   "disqualified": true,
+   "disqualify_reason": "No on-site lodging for guests, which is a required must-have.",
+   "rationale": "Villa Pizzo meets the capacity requirement (max 150, well above the 105 guests) and explicitly offers indoor backup for weather. However, the record explicitly states has_onsite_lodging=false, directly failing the must-have for on-site guest lodging. This is a stated fact, not a missing data point, so it constitutes a clear disqualification rather than an ambiguity to escalate.\n\nChecks (deterministic):\n  [-] on-site lodging for guests -- page states there is no on-site lodging\n  [+] capacity for at least 85 -- stated capacity 150 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.85 (model); evidence ceiling 0.90 (pricing not addressed on the page)\n  Decision: reject -- unmet must-have: on-site lodging for guests (page states there is no on-site lodging)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unmet",
+     "evidence": "page states there is no on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 150 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.85,
+   "decision": "reject"
+  },
+  {
+   "record": {
+    "name": "Wedding -The location for your fairytale wedding on Lake Como",
+    "url": "https://villalarioresortmandello.com/en/wedding/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 170,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Lakefront luxury resort on Lake Como with private dock, park, gazebo, pool, and veranda",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Couples can arrive by private boat at the villa's own dock, and the wedding menu is created together with Amandus Ristorante's executive chef, Luca Mozzanica."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue explicitly states on-site lodging, indoor backup (veranda/indoor spaces), and capacity up to 170, well above the 85+ requirement and the 105 guest count. Located in Italy, satisfying region criteria. Setting (Lake Como lakefront villa with private dock, gazebo, pool) aligns strongly with the 'dramatic natural setting' nice-to-have, though it's lake rather than beach/coastal. Pricing is request-only with no figures given, so budget fit can't be confirmed but this doesn't block a recommend since no stated price exceeds ceiling. Overall this venue appears to satisfy all stated must-haves with clear, explicit evidence.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 170 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 170 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Villa Giulia - Lake Como wedding location and venue - Historical Villa",
+    "url": "https://www.villagiulia-alterrazzo.com/en/lake-como-wedding-venue/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 180,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "An ancient villa from 1867 on the eastern shore of Lake Como, facing the bay of Lecco, with garden, terraces, a panoramic lake-view veranda, and a romantic garden with an ancient well.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The panoramic veranda, heated in winter and fully open in summer, hosts up to 180 guests, while inner rooms with crystal chandeliers, mosaic floors, and frescoes accommodate 30-35 for smaller weddings; the villa's own on-site restaurant prepares tailor-made menus including home-made pasta, bakery items, and gluten-free/vegan options."
+   },
+   "score": 0.55,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Villa Giulia is in Italy (matches region), has on-site lodging, and its main veranda can seat up to 180 guests, comfortably covering the 105-guest requirement. However, the stated indoor backup (inner rooms with frescoes) only accommodates 30-35 guests, far short of the 105-person group, so it's unclear whether adequate weather backup exists for the full guest count. Pricing is unlisted, so budget fit cannot be confirmed but isn't disqualifying. Lake Como setting is scenic but not coastal/beachfront as preferred, and the grand veranda for 180 may not match the 'intimate' vibe sought. Given the indoor-backup capacity gap, this should be escalated for clarification rather than outright recommended.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 180 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.55 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 180 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Villa Balbiano for Weddings on Lake Como",
+    "url": "https://www.wedinspire.com/wedding-venues/lake-como/villa-balbiano/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 200,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Neoclassical lakeside villa in Ossuccio overlooking Lake Como, surrounded by a century-old park and gardens with a lakeside terrace.",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Exclusive suites allow newlyweds a private, opulent retreat immediately after the ceremony, with a 3-day minimum hire including accommodation for 12 guests in 6 suites."
+   },
+   "score": 0.4,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue capacity_max of 200 comfortably covers the 105-guest requirement, and on-site lodging does exist. However, the stated lodging only covers 12 guests in 6 suites \u2014 far short of housing the full 105-person group, so the 'on-site lodging for guests' must-have is only partially evidenced (likely intended for the couple/wedding party, not all guests). The record is silent on indoor backup for weather, which is a required must-have with no stated fact either way. Pricing is request-only so budget can't be confirmed or denied. Setting (Lake Como villa) is elegant but not clearly coastal/beachfront per the nice-to-have, though that's not disqualifying. Given the lodging capacity gap and missing indoor backup info, this needs human follow-up rather than an automatic recommend or reject.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 200 >= 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.55 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 200 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Malcesine Castle - Lake Garda Weddings",
+    "url": "https://www.lakegardaweddings.com/wedding-locations/malcesine-castle",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": true,
+    "setting": "A medieval Scaligeri castle perched on a cliff overlooking Lake Garda in the town of Malcesine, with a terrace offering panoramic lake views.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The castle, believed to have been built in 568 AD, features a stone tower ceremony room and an outdoor terrace seating up to 70 with standing room for 30 more, all with sweeping views over Lake Garda; ceremonies are performed in Italian with a translator."
+   },
+   "score": 0.55,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Indoor backup is explicitly confirmed (stone tower ceremony room) and capacity appears sufficient (terrace holds up to 100 with seating+standing, above the 85-guest minimum, though slightly below the full 105 guest count). However, the page is silent on whether on-site lodging for guests is available - a must-have that cannot be confirmed from this record. Pricing is unknown, which is expected for this type of venue and doesn't affect the must-have verdict. Overall, the missing lodging information is a genuine gap that should be resolved by a human before proceeding.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: capacity 100 does not appear anywhere on the page\n  Confidence 0.55 (model) -> 0.35, capped at 0.35: 2 must-have(s) unconfirmed by the page; pricing not addressed on the page; extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "capacity 100 does not appear anywhere on the page"
+   ],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Castello di Montignano Wedding Venue, Umbria - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-montignano/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 120,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A thousand-year-old castle set atop rolling Umbrian hills, surrounded by silver-green olive groves with sweeping views over the valley, part of a restored hamlet (Borgo).",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The 'Lord of the Castle' experience includes exclusive use of the entire estate\u2014indoor heated pool with hydromassage, outdoor pool, pool park, hortus, and Pavillon\u2014plus late-night celebrations with no extra charge for dancing until dawn."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Italy (matches region), capacity is stated at 120, comfortably above the 105 guest count and the 85 minimum. On-site lodging is confirmed (exclusive use of the estate's rooms) and indoor backup is explicitly stated (heated indoor pool, Pavillon, etc.). All three must-haves are plainly satisfied, giving high confidence in the must-have verdict. Setting is a hilltop castle with valley/olive grove views \u2014 dramatic and natural, though not beachfront, so it partially satisfies the nice-to-have. Pricing is 'request only' with no numeric figures, so budget fit against the $80k ceiling cannot be verified from this record \u2014 that remains an open question to confirm directly with the venue before final booking, but it does not affect the must-have confidence per scoring rules.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 120 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.90 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 120 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Castello di Petrata Wedding Venue, Umbria - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/umbria/castello-di-petrata/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 175,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "14th-century castle in the Umbrian countryside near Assisi, surrounded by olive groves and orchards with views of Assisi and the Umbrian valley",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Multi-day celebrations feature homegrown estate ingredients\u2014olive oils, truffles, wild pork\u2014used in pizza and pasta parties, barbecues, and pool days across the 14th-century castle grounds."
+   },
+   "score": 0.55,
+   "confidence": 0.75,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (castle grounds), capacity up to 175 (comfortably covers 105 guests), and indoor backup (castle interior). Region matches (Italy). However, the venue is an inland countryside castle near Assisi, not coastal or beachfront, conflicting with the couple's stated 'coastal' vibe and nice-to-have of a beachfront/dramatic natural setting. Pricing is undisclosed (request-only), so budget fit (\u2264$80k) cannot be verified\u2014this doesn't disqualify but remains an open risk to confirm. Overall a strong structural fit on must-haves but a poor match to the coastal/intimate vibe, so flagged as a lower-priority recommend pending price confirmation.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 175 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.75, capped at 0.75: extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 175 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Borgo Castello Panicaglia Wedding Venue, Umbria - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/umbria/borgo-castello-panicaglia/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 75,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "A 13th-century castle estate set on an 800-meter high hill in the Umbrian countryside, surrounded by 50 acres of olive groves with mountain views.",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "17 suites sleeping up to 51 guests on a 50-acre hilltop estate, with activities like truffle hunting and wine tasting, and fireworks permitted for the celebration."
+   },
+   "score": 0.1,
+   "confidence": 0.6,
+   "disqualified": true,
+   "disqualify_reason": "Venue's stated max capacity (75) is below the required guest count of 105, failing the 'capacity for at least 85' must-have.",
+   "rationale": "The venue explicitly lists a capacity_max of 75, which falls short of both the 85-guest must-have threshold and the couple's actual 105-guest count. On-site lodging exists but only sleeps 51, further short of full guest accommodation. Indoor backup is unconfirmed (null). Given the clear, stated capacity shortfall, this is a firm reject rather than an escalation.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [-] capacity for at least 85 -- stated capacity 75 < 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.90 (model) -> 0.60, capped at 0.60: 1 must-have(s) unconfirmed by the page; extracted claims were not supported by the page\n  Decision: reject -- unmet must-have: capacity for at least 85 (stated capacity 75 < 85)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unmet",
+     "evidence": "stated capacity 75 < 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.9,
+   "decision": "reject"
+  },
+  {
+   "record": {
+    "name": "Castello di Petrata Wedding Venue, Umbria, Italy | 2027 Prices",
+    "url": "https://thewhiteedit.com/find-a-venue/castello-di-petrata-umbria/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 200,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Historic Umbrian estate near Assisi, set among rolling hills and woodland with views over the Umbria valley and Assisi",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Mention booking through The White Edit to receive Castello di Petrata's complimentary basic lighting package, and the estate includes 20 glamping tents alongside 22 hotel rooms for exclusive-use, weekend-long stays."
+   },
+   "score": 0.78,
+   "confidence": 0.65,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed by the record: on-site lodging (22 hotel rooms + 20 glamping tents for exclusive use), capacity up to 200 (well above the 105 guest count and 85 minimum), and indoor backup for weather. Region (Italy) matches the couple's list. However, pricing is entirely unknown, so budget fit (\u2264$80k) cannot be verified \u2014 this doesn't block a recommend since no stated price exceeds budget, but it should be confirmed before booking. The setting is a hillside/valley Umbrian estate, not beachfront or coastal, so it only partially satisfies the 'nice to have' dramatic natural/coastal setting and may not fully match the 'coastal' vibe preference.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 200 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.65, capped at 0.65: pricing not addressed on the page; extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 200 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Luxury Destination Weddings in Italy | Castello di Petrata, Umbria",
+    "url": "https://www.weddings.castellopetrata.com/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Private castle estate in Umbria near Assisi, with panoramic countryside views, olive groves and vineyards",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings require a minimum of 50 guests with a full venue buyout, and couples can arrange curated local experiences such as wine tastings or truffle hunts alongside a welcome dinner with live Italian music."
+   },
+   "score": 0.6,
+   "confidence": 0.5,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Meets two must-haves clearly: on-site lodging (true) and indoor backup for weather (true). However, capacity_max is null, so we cannot confirm the venue can host 105 guests (must-have: at least 85). The venue does note a 'minimum of 50 guests' for full buyout, suggesting scalability, but no explicit max capacity is stated, so this remains unconfirmed. Region (Italy), vibe (private castle, olive groves, vineyards, intimate feel), and price (unknown but no stated figure exceeding budget) are otherwise consistent with the couple's criteria. Given the missing capacity confirmation, this should be escalated for direct venue confirmation rather than auto-recommended.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.50 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.5,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Destination Wedding Venue in Italy | Luxury Castle in Umbria",
+    "url": "https://www.weddings.castellopetrata.com/venue",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 100,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A restored 14th-century fortress on a private 50-hectare estate in Umbria, overlooking Assisi, with gardens, rolling hills and panoramic valley views.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The estate includes 22 individually designed rooms/suites plus 20 elegant glamping tents, and the kitchen uses estate-grown extra virgin olive oil, seasonal produce, and local truffles in its cuisine."
+   },
+   "score": 0.55,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "On-site lodging (22 rooms/suites + 20 glamping tents) and indoor backup (restored fortress) are both clearly confirmed, satisfying two must-haves. However, capacity_max is stated as 100, which is below the couple's actual guest_count of 105 \u2014 even though it clears the stated 85-person threshold, it cannot confirmably host the full guest list. This is a real capacity risk that should be verified directly with the venue before booking. Pricing is unknown but not disqualifying since no ceiling was breached. Setting (Umbrian castle/estate, valley views) fits the 'intimate, natural, not a ballroom' vibe well, though it's not coastal/beachfront as the nice-to-have specifies.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 100 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.55 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 100 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Luxury Wedding Venue in Puglia | Masseria Torre Maizza",
+    "url": "https://www.roccofortehotels.com/hotels-and-resorts/masseria-torre-maizza/groups-weddings/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A 16th-century farmhouse (masseria) with verdant gardens and olive trees in the Puglian countryside near Savelletri di Fasano, with views of the Adriatic coast",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings can be held amid the property's olive trees, with themed dinners (Baroque, gypsy, or Volare) and dining at Carosello restaurant, set in the masseria's former stables with arched, whitewashed ceilings and rustic pews."
+   },
+   "score": 0.6,
+   "confidence": 0.45,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region (Italy) fits, and the page explicitly confirms on-site lodging and indoor backup (Carosello restaurant in the former stables) \u2014 two of three must-haves are clearly satisfied. However, capacity_max is null; the page never states a maximum guest capacity, so we cannot confirm it can host 105 guests (must-have: at least 85). This is a silent gap, not a stated failure, so it should be escalated rather than rejected. Pricing is unknown but that doesn't affect the must-have verdict. Setting (Puglian countryside with Adriatic coast views) aligns well with the coastal, natural, intimate vibe and nice-to-have of dramatic natural setting.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.45 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.45,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Masseria Alchimia Wedding Venue, Puglia - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-alchimia/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 250,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A minimalist-chic Boutique House masseria in the Puglia countryside between Fasano and Savelletri, surrounded by olive groves and traditional stone walls, with an olive tree garden, Apulian piazza, and underground grotto (former oil mill).",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "The winter atmospheric grotto, a former olive mill, hosts up to 125 guests with no music curfew, while a 300 m\u00b2 Moroccan marquee with sea view covers April to October weddings."
+   },
+   "score": 0.82,
+   "confidence": 0.75,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Italy (Puglia), matches region criteria. Stated capacity_max of 250 comfortably exceeds the 105-guest count. Record explicitly confirms on-site lodging (has_onsite_lodging: true) and indoor weather backup (has_indoor_backup: true, via the atmospheric grotto and Moroccan marquee options). Setting (masseria among olive groves, stone walls, grotto) fits the intimate, natural, non-ballroom vibe, and the sea-view marquee suggests some coastal character, though full beachfront is not confirmed. Pricing is request_only with no numbers given, so budget fit cannot be verified from this record alone \u2014 that's a gap for follow-up, not a must-have failure. All three must-haves are plainly addressed, supporting a recommend with high confidence on the must-have verdict, though price should be confirmed directly with the venue.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 250 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.75, capped at 0.75: extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 250 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Masseria Spina Wedding Venue, Puglia - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/puglia/masseria-spina/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 160,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "18th-century manor farm (masseria) set in a 7-hectare park of olive trees in Puglia, with a citrus grove ceremony space offering sea views",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Ceremonies can take place in the citrus grove with terrace sea views and an olive tree backdrop, with accommodation for up to 30 guests across 6 historical residences on the property."
+   },
+   "score": 0.45,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue capacity (up to 160) comfortably covers the 105-guest count, and it does have on-site lodging \u2014 but that lodging is explicitly capped at 30 guests across 6 residences, far short of the full 105-guest party, so the 'on-site lodging for guests' must-have is only partially met. The page is also completely silent on indoor backup for bad weather, which is a required must-have and cannot be assumed. Pricing is request-only so budget fit is unknown but not disqualifying. Setting (citrus grove, sea views, olive trees) strongly matches the coastal, intimate, non-ballroom vibe and nice-to-have. Given the lodging shortfall and unconfirmed weather backup, this needs human review rather than a clean recommend.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 160 >= 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.55 (model); evidence ceiling 0.60 (1 must-have(s) unconfirmed by the page; extracted claims were not supported by the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 160 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Destination Venue Puglia | Alchimia Collection",
+    "url": "https://www.alchimiacollection.com/en/wedding-destination-puglia/",
+    "region": "Italy",
+    "classification": "venue",
+    "capacity_max": 20,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Authentic Puglian masseria with garden, courtyard piazza, and underground cave (former oil mill), set in the Puglia countryside near Fasano",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The masseria features three distinct settings for one wedding: a shady olive-tree garden for the ceremony, a spacious Apulian piazza surrounded by centuries-old olive trees for dining, and a stunning ancient cave (a former oil mill) for dancing without curfew."
+   },
+   "score": 0.1,
+   "confidence": 0.95,
+   "disqualified": true,
+   "disqualify_reason": "capacity_max of 20 is far below the required minimum of 85 guests (105 total)",
+   "rationale": "This venue clearly fails the capacity must-have: stated capacity_max is 20, nowhere near the 105-guest party or even the 85-guest floor. While on-site lodging and indoor backup (the cave) are explicitly confirmed, the hard capacity shortfall is a stated fact, not a gap in information, so this is a reject rather than an escalate. Pricing is unknown but irrelevant given the disqualifying capacity issue.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [-] capacity for at least 85 -- stated capacity 20 < 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.95 (model)\n  Decision: reject -- unmet must-have: capacity for at least 85 (stated capacity 20 < 85)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unmet",
+     "evidence": "stated capacity 20 < 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.95,
+   "decision": "reject"
+  },
+  {
+   "record": {
+    "name": "Cavo Ventus - Wedding Venue in Santorini",
+    "url": "https://www.cavoventus.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Built on the edge of the Caldera at 300m above sea level, covering 1000sqm, in harmony with Santorini's volcanic landscape",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Built on the edge of the Caldera at a height of 300m above sea level, offering an intimate and private setting with separate ceremony, reception, and party areas"
+   },
+   "score": 0.35,
+   "confidence": 0.2,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece (matches region) with a dramatic caldera-edge setting that aligns with the 'natural, dramatic, coastal' vibe nice-to-have. However, the record is silent on all three must-haves: no mention of on-site guest lodging, no stated capacity figure (so the 85-guest minimum can't be confirmed), and no indoor backup plan for weather is described. Pricing is also unknown, so budget fit can't be verified either. None of these are stated as failures, but none are confirmed as passes -- this requires direct follow-up with the venue before it can be recommended or ruled out.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.20 (model); evidence ceiling 0.45 (3 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.2,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Best Destination Luxury Wedding Venue In Santorini, Greece",
+    "url": "https://leciel-santorini.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Santorini, Greece",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Menus are freshly prepared each day by the head chef using local produce from Santorini and the Greek Islands of the Aegean Sea, cooked with \"meraki\"."
+   },
+   "score": 0.2,
+   "confidence": 0.45000000000000007,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece (matches region) but the page provides no information on capacity, on-site lodging, or indoor weather backup - all three must-haves are unaddressed. Capacity is null so fit for 105 guests (min 85) cannot be confirmed. Pricing is also entirely unstated, so budget fit is unknown. This is a case of the page being silent rather than stating failure, so this should be escalated for direct inquiry rather than rejected outright, but too much critical must-have info is missing to recommend.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.75 (model) -> 0.45, capped at 0.45: 3 must-have(s) unconfirmed by the page; pricing not addressed on the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.75,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "El Viento Luxury Weddings & Events",
+    "url": "https://elviento-santorini.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Elegant wedding venue located on the cliffside of Megalochori village, overlooking the caldera with views of Fira and O\u00eda; a renovated windmill accommodation",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The host Petros is a pastry chef who owns the Family bakery just meters away from El Viento and personally brings fresh breakfast each morning."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Greece location fits region criteria and page confirms on-site lodging (renovated windmill accommodation on the property, with host living/working steps away). However, capacity_max is null with no stated guest limit, so it's unconfirmed whether the venue can hold 105 (or even 85) guests \u2014 cliffside windmill venues in Santorini are often small and intimate, which raises real doubt. Indoor backup for weather is also never mentioned, a serious gap for a caldera-cliff setting prone to wind/sun exposure. Pricing is unstated, which is normal for boutique Greek venues and not treated as a red flag. Given two of three must-haves are unverified rather than confirmed, this should go to human review rather than an automatic recommend or reject.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Venue in Mykonos - Hippie Fish",
+    "url": "https://hippiefish-mykonos.com/wedding-venue-mykonos/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Beachfront venue along the Mykonos coastline offering beach ceremonies and open-sky celebrations",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings can be held as an intimate beach ceremony or a grand celebration under the open sky along the Mykonos coastline at Agios Giannis."
+   },
+   "score": 0.3,
+   "confidence": 0.15,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece and offers a beachfront, coastal, open-sky setting that fits the desired vibe and nice-to-have. However, the page is silent on all three must-haves: no mention of on-site guest lodging, no stated capacity (so the 85+ guest requirement cannot be confirmed), and no indoor backup option for weather is described. Pricing is also unstated, which is normal for destination venues and not itself disqualifying. Given the complete absence of evidence on the must-haves, this should be escalated for direct inquiry rather than recommended or rejected outright.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.15 (model); evidence ceiling 0.45 (3 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.15,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Weddings | Amazon Mykonos Resorts & Spa",
+    "url": "https://www.amazonmykonos.com/weddings/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Sea-facing traditional Cycladic chapel at a Mykonos resort",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Ceremony can take place at a sea-facing traditional Cycladic chapel, with transportation options including private yacht, horse-drawn carriage, or helicopter."
+   },
+   "score": 0.55,
+   "confidence": 0.5,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece, has on-site lodging and indoor backup for weather explicitly confirmed. However, the record does not state a maximum capacity, so it's impossible to confirm it can host 105 guests (must-have of at least 85). Pricing is also unlisted, so budget fit can't be verified, though that alone doesn't disqualify. The sea-facing Cycladic chapel setting aligns well with the intimate, coastal, non-ballroom vibe and offers dramatic natural elements (yacht/helicopter arrival), satisfying the nice-to-have. Recommend escalation to confirm guest capacity before deciding.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.50 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.5,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Royal Myconian",
+    "url": "https://www.myoverseaswedding.com/wedding-destinations/greece/royal-myconian",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Luxury resort on Mykonos overlooking the island's longest fine sand beach, with a Cycladic stone fa\u00e7ade and interiors designed by a Greek set designer.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Operates seasonally between early May and mid-October, with blackout dates during July and August, and offers rooms with private infinity pools or Jacuzzis overlooking Mykonos's longest sand beach."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "On-site lodging is confirmed (rooms with private pools/Jacuzzis). However, capacity_max is null with no stated max, so it's unconfirmed whether the venue can host 105 guests. Indoor weather backup is not mentioned anywhere in the record. Additionally, the venue has blackout dates in July and August, which conflicts with part of the couple's May-Aug 2027 window, though May-June would still be viable. Two of three must-haves (capacity, indoor backup) are unverified rather than confirmed, and the date restriction adds further ambiguity -- this needs human follow-up before recommending.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Villa Fuerte & Weddings Estate Wedding Venue, Crete - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/crete/villa-fuerte-weddings-estate/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": 200,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Private Cretan estate in the secluded area of Alykianos, featuring a stone chapel, landscaped gardens, and a poolside terrace",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "The estate includes a heated infinity pool, a children's playroom, and two 7-seater vans included for guest transport during the stay."
+   },
+   "score": 0.6,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece (Crete), matches region criteria, and offers on-site lodging plus a large capacity (up to 200), comfortably covering the 105-guest count and the 85-minimum requirement. However, the record is silent on indoor backup for weather, a must-have \u2014 this is a critical gap, not a stated pass. Pricing is request-only with no figures given, so budget fit cannot be confirmed but also isn't disqualifying. The romantic estate setting (chapel, gardens, pool) aligns well with the 'intimate, natural, coastal' vibe, though it leans toward a private estate rather than confirmed beachfront.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 200 >= 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.55 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 200 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Venue - Reveli Venue & Villas",
+    "url": "https://www.ktimareveli.gr/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Verdurous grounds of 4000 m2 in Kalathas, Chania, Crete, surrounded by tranquil parkland with sea and mountain views",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Two luxurious on-site Villas (including a private swimming pool and terrace overlooking the Aegean Sea) allow the couple to get ready separately before the wedding and later enjoy their honeymoon."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region matches (Crete, Greece) and on-site lodging is confirmed via two private villas \u2014 but those villas seem designed for the couple's own use/honeymoon rather than as guest housing for a 105-person wedding, so guest lodging capacity is unclear. Capacity_max is null and the page gives no indication the grounds (4000 m2) can host 105 guests; this is a small boutique-feeling property that may be undersized. No mention of indoor backup for weather at all. Pricing is unknown so budget can't be assessed, but that alone isn't disqualifying. Two of three must-haves are unconfirmed rather than confirmed-failed, so this should be escalated for direct venue inquiry on capacity and indoor backup before recommending.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Rhodes Weddings Venue | Luxury Wedding Events in Rhodes",
+    "url": "https://rhodes-weddings-venue.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Bayside wedding venue on a decorated wooden platform overlooking Lindos Bay and the Acropolis of Lindos, located inside the Summer Paradise complex on Lindos main beach, Rhodes island, Greece",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings take place on a decorated wooden platform with excellent views of sheltered Lindos Bay and the Acropolis, with on-site catered receptions featuring buffet-style barbeque."
+   },
+   "score": 0.3,
+   "confidence": 0.45000000000000007,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece (matches region) with a dramatic beachfront/coastal setting overlooking Lindos Bay, fitting the desired vibe. However, all three must-haves are unaddressed: no mention of on-site guest lodging, no stated capacity (cannot confirm it holds 105 guests), and no indoor backup plan for weather is mentioned despite being an open-air wooden platform venue. Pricing is also unknown, so budget fit can't be verified. Given the silence on all must-haves rather than explicit failure, this should be escalated for direct inquiry rather than rejected outright.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.75 (model) -> 0.45, capped at 0.45: 3 must-have(s) unconfirmed by the page; pricing not addressed on the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.75,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Rhodes Landing",
+    "url": "https://www.rhodeslanding.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": null,
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": null
+   },
+   "score": 0.3,
+   "confidence": 0.2,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region (Greece) matches, but the record has no confirmed data on capacity, on-site lodging, or indoor weather backup \u2014 all three must-haves are unverified nulls, not stated facts. Capacity of 105 guests cannot be confirmed. Pricing is also unknown, so budget fit is unclear. This venue needs direct follow-up (via [email removed]) to confirm must-haves before it can be recommended or rejected.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.20 (model); evidence ceiling 0.45 (3 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.2,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Rhodes Ceremony Venue Town Hall",
+    "url": "https://www.rhodesweddingservices.com/ceremony-venues/ceremony-venue-town-hall",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Historic town hall in Rhodes town facing Mandraki harbour, built in 1937 during the Italian period; ceremonies held in the grand wedding room inside the town hall.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Ceremonies take place in the grand wedding room of the historic 1937 Italian-era town hall overlooking Mandraki harbour, where the Colossus of Rhodes once stood, with post-ceremony photos possible along the harbour; ceremonies are only held Wednesdays and Fridays from 14:00-19:00."
+   },
+   "score": 0.15,
+   "confidence": 0.45000000000000007,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "This is a civil ceremony venue only (town hall wedding room, limited to Wed/Fri 14:00-19:00) with no stated capacity, no on-site lodging, and no indoor backup mentioned. Capacity is null so the 105-guest/85-minimum requirement cannot be confirmed - a wedding room in a town hall is unlikely to hold 85+. No lodging info at all. No indoor backup mentioned (though ceremony itself is indoors, this doesn't address a broader event backup). Doesn't match the intimate/coastal/natural vibe - this is an administrative civil ceremony space, not a reception venue. Multiple must-haves unaddressed or likely failing.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.75 (model) -> 0.45, capped at 0.45: 3 must-have(s) unconfirmed by the page; pricing not addressed on the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.75,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Villa Sylva Corfu | Luxury Beachfront Villa & Wedding Venue in Greece",
+    "url": "https://www.villasylva.com/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "Private beachfront luxury villa in a forested area of Kanoni, Corfu, with views of the Ionian Sea and Pontikonissi (Mouse Island), 10 minutes from Corfu town",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Secluded beachfront villa tucked in a lush forest in Kanoni with views of Pontikonissi (Mouse Island), yet only 10 minutes from Corfu town"
+   },
+   "score": 0.3,
+   "confidence": 0.45000000000000007,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region matches (Greece) and the beachfront/dramatic natural setting nice-to-have appears strongly satisfied. However, all three must-haves are unconfirmed: capacity_max is null (no evidence it can hold 105 guests, well above the minimum 85), has_onsite_lodging is null (no stated on-site guest accommodations), and has_indoor_backup is null (no mention of a weather contingency plan). Pricing is also entirely unstated, so budget fit can't be verified either, though that alone wouldn't disqualify. Because the page is silent rather than explicitly failing these must-haves, this should be escalated for direct venue inquiry rather than rejected outright, but it cannot be recommended as-is.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.75 (model) -> 0.45, capped at 0.45: 3 must-have(s) unconfirmed by the page; pricing not addressed on the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.75,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Danilia Village, Corfu Wedding Venue - The White Edit",
+    "url": "https://thewhiteedit.com/find-a-venue/danilia-village-corfu/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": 400,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A unique replica of a traditional Corfiot village set in verdant greenery on Corfu, featuring an Orthodox church, folk art museum, caf\u00e9, large open-air tavern, and a stone-built building with rustic, vintage d\u00e9cor.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Danilia Village has been the filming location for the James Bond movie 'For Your Eyes Only', ITV's 'The Durrells', and 'My Big Fat Greek Wedding 3'."
+   },
+   "score": 0.75,
+   "confidence": 0.65,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue explicitly offers on-site lodging and indoor backup, and its max capacity of 400 comfortably covers the 105-guest requirement, satisfying all three must-haves with clear evidence. Region (Greece) matches criteria. Pricing is unlisted, so budget fit cannot be confirmed\u2014worth a follow-up\u2014but this doesn't affect the must-have verdict. The staged 'traditional village' setting is charming and unique but leans more theatrical/museum-like than an intimate beachfront/natural coastal vibe, and beachfront nice-to-have is unconfirmed.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 400 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.65, capped at 0.65: pricing not addressed on the page; extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 400 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "The Courti Estate: The Perfect Corfu Wedding Venue",
+    "url": "https://www.thecourtiestate.com/corfu-wedding-venue/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": 500,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Private luxury estate in Corfu with expansive grounds, suitable for both intimate and large outdoor weddings",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Elegant indoor option accommodates up to 120 guests as an all-weather alternative, avoiding the cost and uncertainty of marquee hire; the estate has also hosted events ranging from small weddings to private rock concerts for up to 500 guests."
+   },
+   "score": 0.75,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (has_onsite_lodging=true), indoor weather backup (dedicated indoor space for up to 120 guests, explicitly avoiding marquee uncertainty), and capacity well above the 105 guest count (outdoor up to 500, indoor backup up to 120). Region matches (Greece/Corfu). Price is unlisted so it cannot be confirmed against the $80k ceiling, but that absence doesn't affect must-have confidence per scoring rules. Some vibe concern: the estate's history of hosting large events (up to 500 guests, rock concerts) suggests it may skew toward a grander, more commercial feel than the 'intimate, not big-box' vibe the couple wants, and beachfront/dramatic natural setting is not explicitly confirmed (only 'expansive grounds' mentioned). These are nice-to-have/vibe concerns, not must-have failures, so decision leans recommend but a human should verify vibe fit and pricing.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 500 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 500 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "WEDDINGS \u2014 Ekaterini Estate",
+    "url": "https://ekateriniestatecorfu.com/weddings",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "A private hilltop estate in Corfu with panoramic views of the surrounding landscape, featuring elegant terraces and lawns for wedding receptions.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The Estate requires a 3 night minimum stay for weddings, and the house comfortably accommodates 16 guests for family, friends, or honeymoon stays before or after the celebration."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Greece location fits region criteria and the record confirms on-site lodging (house sleeps 16), though that only covers a fraction of the 105 guests. However, capacity_max is null so we cannot confirm the venue can host at least 85 guests, and there is no mention of indoor backup for weather \u2014 both must-haves are unverified rather than confirmed. Pricing is unknown, which is normal for destination venues and not held against it. Needs direct follow-up with the venue on capacity and wet-weather contingency before recommending.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Weddings - Canal D' Amour Village",
+    "url": "https://canaldamourvillage.com/weddings/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": 50,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Beach and pool wedding ceremonies on the northwest coast of Corfu island, at Canal D'Amour with rugged cliffs and crystal-clear waters overlooking the Ionian Sea",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Offers a dual ceremony choice of exchanging vows on the beach at the mythical Canal D'Amour or beside the venue's infinity pool overlooking the Ionian Sea."
+   },
+   "score": 0.1,
+   "confidence": 0.75,
+   "disqualified": true,
+   "disqualify_reason": "Stated capacity_max of 50 is well below the required minimum of 85 (guest count 105), a clear must-have failure.",
+   "rationale": "Venue explicitly caps at 50 guests, far short of the couple's 105-guest party and the 85-minimum must-have. On-site lodging is confirmed, but indoor weather backup is not mentioned (null) \u2014 moot given the capacity failure. Reject on capacity grounds alone.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [-] capacity for at least 85 -- stated capacity 50 < 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.90 (model) -> 0.75, capped at 0.75: 1 must-have(s) unconfirmed by the page; pricing not addressed on the page\n  Decision: reject -- unmet must-have: capacity for at least 85 (stated capacity 50 < 85)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unmet",
+     "evidence": "stated capacity 50 < 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "reject"
+  },
+  {
+   "record": {
+    "name": "Sampatiki Suites | Your dream wedding venue in the Peloponnese",
+    "url": "https://www.sampatikisuites.com/wedding-venue/",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Seaside 4-star hotel on the Peloponnese coast with an indoor hall opening to an outdoor area around an infinity pool overlooking the Aegean Sea",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Couples can arrive by boat at the whitewashed St George church for the ceremony, then be whisked directly back to the Sampatiki Suites pool area for the celebration."
+   },
+   "score": 0.55,
+   "confidence": 0.45,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue is in Greece with confirmed on-site lodging (4-star hotel) and indoor backup (indoor hall opening to outdoor pool area), satisfying two must-haves. However, capacity_max is null and the page never states a guest capacity, so we cannot confirm it can hold the required 105 guests. This is a critical gap since capacity is a must-have. The coastal, non-ballroom setting and boat-arrival ceremony detail align well with the desired intimate, dramatic natural vibe, and pricing is unstated (not a red flag on its own). Given the unconfirmed capacity, this should be escalated for verification rather than recommended outright.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.45 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.45,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Weddings in Peloponnese | Riviera Olympia & Aqua Park",
+    "url": "https://www.rivieraolympia.com/weddings.html",
+    "region": "Greece",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Beachfront resort with a flower-decked beach gazebo and a resort chapel, plus an on-site equestrian centre",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Couples can exchange vows under a flower-decked beach gazebo or at the resort chapel, with the option to arrive by horse-drawn carriage or on horseback via the on-site Olympia equestrian centre."
+   },
+   "score": 0.55,
+   "confidence": 0.5,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Meets on-site lodging and indoor backup (resort chapel) must-haves per stated facts. However, capacity_max is null, so we cannot confirm the venue can host 105 guests (must-have: capacity \u226585) - this is a critical gap, not a pass. Pricing is unstated so budget cannot be verified either way, though this alone wouldn't disqualify. The 'resort with aqua park' framing raises a soft concern about the 'not a big-box resort' vibe, though the beach gazebo and equestrian details suggest some intimacy and natural setting alignment (a nice-to-have match). Overall a plausible fit but capacity confirmation is needed before recommending.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.50 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.5,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "My Vintage Wedding in Portugal - The Quinta - The Quinta since 1817",
+    "url": "https://myvintageweddingportugal.com/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 150,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A historical Quinta estate over 200 years old in Sintra, Portugal, surrounded by gardens, forest, and ocean views, with an enchanted chapel and garden swimming pool.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The estate includes its own enchanted chapel, a Manor House with a Bridal Suite and 6 bedrooms, plus a separate 3-bedroom guest house, sleeping up to 20 guests on-site."
+   },
+   "score": 0.55,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue satisfies the Italy/Greece/Portugal region requirement (Portugal), has a stated capacity (150) that comfortably covers the 105-guest count, and explicitly offers indoor backup. However, the 'on-site lodging' flag is contradicted by the standout detail: the Manor House and guest house together sleep only ~20 guests, far short of the 105 total \u2014 so on-site lodging for the full group is not actually confirmed, just for a small subset. Pricing is entirely unknown, so budget fit (\u2264$80k) cannot be verified, though per rules that alone isn't disqualifying. The mismatch between the lodging capacity and guest count is a genuine ambiguity that should be human-verified before booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 150 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.55 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 150 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Events and Destination Weddings in Lisbon, Portugal",
+    "url": "https://www.quintadabichinha.pt/en/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": null,
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Guests attending a wedding/event at Quinta da Bichinha can book a room on-site directly through the venue's booking system."
+   },
+   "score": 0.35,
+   "confidence": 0.4,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region (Portugal) matches, and on-site lodging is confirmed. However, capacity is null (cannot confirm it can host 105 guests, must-have of 85+), indoor weather backup is not mentioned, and pricing is entirely unknown against an $80k ceiling. These gaps mean must-haves cannot be verified, so this should be escalated for direct inquiry rather than recommended or rejected outright.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.40 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.4,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Quinta da Concei\u00e7\u00e3o, Historic Country Retreat | Hidden gem luxury wedding venue",
+    "url": "https://quintadaconceicao.pt/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "Historic 1715 Manor House and Estate spanning 50 hectares of cork oak forests, with manor house, gardens, and pool, 30 minutes south of Lisbon International Airport",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "An 18th-century, 50-hectare exclusive-use estate with an 18-bedroom, air-conditioned 1715 manor house, romantic gardens, and a celebratory pool, just 30 minutes from Lisbon Airport."
+   },
+   "score": 0.45,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "On-site lodging is confirmed (18-bedroom manor house on the estate), which satisfies that must-have. However, the record is silent on maximum capacity (capacity_max is null) so we cannot confirm the venue can host 105 guests or even the 85-minimum threshold, and there is no mention of an indoor backup space for weather. With 18 bedrooms in the manor house, on-site lodging for all 105 guests seems doubtful, though the page doesn't explicitly rule it out. Pricing is unknown but that alone isn't disqualifying. Two of three must-haves are unconfirmed, so this should be escalated for direct venue confirmation rather than recommended.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  [!] ungrounded: capacity 300 appears on the page, but not as a guest count\n  Confidence 0.40 (model) -> 0.35, capped at 0.35: 2 must-have(s) unconfirmed by the page; pricing not addressed on the page; extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [
+    "capacity 300 appears on the page, but not as a guest count"
+   ],
+   "model_confidence": 0.4,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Vineyard Wedding Venues | Quinta de Sant'Ana -Portugal",
+    "url": "https://www.quintadesantana.com/wedding/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": true,
+    "setting": "A country estate in a small Portuguese village near Mafra, with ivy-covered walls, a manor house, a Baroque chapel with bell tower, lush gardens, and surrounding vineyards and eucalyptus forests.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The estate features a Baroque chapel with bell tower and releases white tumbling doves for the ceremony, set among working vineyards with wine barrels stained by dark red wine."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Portugal location fits region criteria and indoor backup (Baroque chapel) is confirmed. However, the page is silent on both on-site guest lodging and maximum capacity \u2014 two of the three must-haves are unconfirmed rather than explicitly failed. Capacity for 105 guests cannot be verified from a country estate/vineyard setting without stated numbers. Pricing is unknown, so no budget violation can be confirmed either way. This requires human follow-up to confirm lodging availability and capacity before a firm recommendation.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Quinta Wedding at Quinta do Torneiro | Portugal | Destination Wedding",
+    "url": "https://www.my-destination-wedding-portugal.com/quinta-do-torneiro",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 250,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "18th-century historical manor house (Quinta) with chapel, multiple tiled interior rooms, gardens, and countryside/woodland, located in the Municipality of Oeiras near Lisbon, Cascais, and Sintra",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The manor house features historical Portuguese tiles nearly 300 years old that depict daily life in the 18th century, with the Noble Room uniquely decorated in green tiles matching its green ceiling."
+   },
+   "score": 0.85,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (has_onsite_lodging: true), capacity max 250 comfortably exceeds the 105-guest requirement, and indoor backup is stated as available (multiple tiled interior rooms, chapel). Region (Portugal) matches the couple's list. Setting is a historic countryside manor rather than beachfront, so it only partially satisfies the 'nice to have' dramatic coastal setting and may read as more manor-house/countryside than the 'intimate coastal' vibe desired. Pricing is unlisted (request only), so budget fit cannot be verified from this record alone -- this doesn't lower must-have confidence per rules, but should be confirmed before final booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 250 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.90 (model)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 250 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "My Vintage Wedding in Portugal - The Quinta",
+    "url": "https://myvintageweddingportugal.com/weddings",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "A traditional Portuguese vintage quinta over 200 years old in Sintra, near Lisbon, featuring a historical chapel, gardens with sea views, a pool garden, and located five minutes from Adraga Beach",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "The venue offers exclusive use of the entire property for up to 20 sleeping guests across 5 bedrooms in the main house, 3 in the guest house, plus a bridal suite, in a quinta with more than 200 years of history."
+   },
+   "score": 0.35,
+   "confidence": 0.45,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Indoor backup is confirmed and the property has some on-site lodging, but the standout detail reveals that lodging only covers ~20 sleeping guests (5 bedrooms main house + 3 guest house + bridal suite) versus a 105-guest wedding \u2014 likely insufficient to house the wedding party on-site, though the record doesn't explicitly rule out overflow arrangements. More critically, capacity_max is null: the page never states the venue's event/ceremony capacity, so we cannot confirm it can host 105 (or even the 85 minimum) guests for the ceremony/reception itself. This is a must-have left unconfirmed rather than a stated pass, so it should not be scored as satisfied. Pricing is unknown, which is normal for destination venues and not held against it. Setting (Sintra quinta near Adraga Beach, sea views, historic chapel) fits the coastal/intimate/natural vibe nicely as a nice-to-have. Given the unresolved capacity question and thin evidence on lodging scale for the full guest count, this should be escalated to a human for direct confirmation rather than recommended or rejected outright.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.45 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.45,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Venues in Sintra, Portugal | The Ritz-Carlton, Penha Longa",
+    "url": "https://www.ritzcarlton.com/en/hotels/lisrz-penha-longa-resort/weddings/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 700,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Historic Sintra resort set within a 14th-century monastery and palace grounds, with a 16th-century chapel, ballrooms, gardens, and mountain backdrop",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Coroa I is a fully restored 700 sqm ballroom that was once the sleeping quarters of the Portuguese Royal Family, accommodating up to 700 guests, and couples can exchange vows in a 16th-century chapel inside the XIV Monastery with no noise or time limits."
+   },
+   "score": 0.5,
+   "confidence": 0.85,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves appear satisfied by the page: on-site lodging (resort with rooms), indoor backup (large restored ballroom, chapel with no time/weather limits), and capacity (up to 700, well above the 105 guest count). Region (Portugal) matches. However, this is a massive luxury resort with a 700-person ballroom and monastery/palace grounds \u2014 the opposite of the couple's stated 'intimate, natural, not a big-box resort ballroom' vibe, and there's no beachfront/dramatic natural setting cue, just gardens and mountains. Pricing is completely unlisted, so budget fit (ceiling $80k) is unverified and a real risk given Ritz-Carlton positioning. Must-have verdict is high-confidence, but overall fit is weak due to vibe mismatch and unknown pricing.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 700 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.85 (model); evidence ceiling 0.90 (pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 700 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Elegant wedding in a 5-star hotel in Cascais - Grande Real Villa It\u00e1lia Hotel",
+    "url": "https://www.granderealvillaitalia.realhotelsgroup.com/meetings-and-events-in-cascais/weddings/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "5-star hotel overlooking the sea in Cascais, with poolside, terrace, and indoor venue options",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Named 'Best for Romance 2025' by Cond\u00e9 Nast Johansens, offering ceremonies by the pool with the Atlantic Ocean as a backdrop and a Real Spa Therapy experience for the bride, groom, and guests."
+   },
+   "score": 0.6,
+   "confidence": 0.5,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Portugal location fits region criteria, and the page explicitly confirms on-site lodging and indoor backup (two of three must-haves satisfied). However, capacity_max is null \u2014 the page never states a maximum guest capacity, so we cannot confirm it can host 105 guests (must-have #3 unconfirmed, not failed). Pricing is also unknown, which is normal for destination venues and doesn't affect the must-have verdict, but means budget fit can't be verified either. Setting and vibe (5-star hotel, poolside, Atlantic backdrop) suggest a strong match to the coastal/dramatic nice-to-have, though 'not a big-box resort ballroom' is uncertain given it's a large hotel property. Recommend escalating to confirm capacity for 105 and get pricing before final decision.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.50 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.5,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Villa Portugal",
+    "url": "https://www.lisbonweddingplanner.com/casa-santa-marta-wedding-venue",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": "19th century oceanfront stately home in Cascais, Portugal, built by an Irish tobacco millionaire, blending multiple architectural styles",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "A grand 19th century stately home on the Cascais coastline, built by an Irish tobacco magnate and once the most luxurious private residence in the town."
+   },
+   "score": 0.35,
+   "confidence": 0.3,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Portugal region matches, and the oceanfront Cascais setting fits the coastal/dramatic-natural nice-to-have well. However, all three must-haves are unconfirmed: capacity_max is null (cannot verify it holds 105 or even the 85 minimum), has_onsite_lodging is null (no mention of guest lodging), and has_indoor_backup is null (no mention of a wet-weather plan). Pricing is also unstated, so budget fit is unknown. None of these are stated failures, but the page is silent on all must-haves, so this should be escalated for direct venue confirmation rather than assumed to pass or fail.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.30 (model); evidence ceiling 0.45 (3 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.3,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Forte da Cruz Gallery | Estoril - Cascais | Wedding Venues Portugal",
+    "url": "https://www.weddingvenuesportugal.com/forte-da-cruz-wedding-venue-photos",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": true,
+    "setting": "Beachfront villa/fort at the heart of Estoril with views to the Atlantic Ocean",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Ceremonies can be held on an enchanting terrace facing the beach, with cocktails at sunset on the front porch or in the round tower, and dinner held under the Marquise with ocean views."
+   },
+   "score": 0.4,
+   "confidence": 0.35,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Beachfront setting in Portugal fits region and vibe, and indoor backup is explicitly confirmed (dinner under the Marquise, ceremony/cocktail options). However, the record is silent on on-site guest lodging and maximum capacity \u2014 both are hard must-haves for this 105-guest wedding, and neither can be assumed from a null field. Price is unlisted, which is normal for this type of venue and not held against it. Given two of three must-haves are unconfirmed, this needs human follow-up rather than a confident recommend or reject.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  Confidence 0.35 (model); evidence ceiling 0.60 (2 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.35,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Wedding Venue Algarve | Wedding Location | Quinta dos Vales",
+    "url": "https://quintadosvales.pt/en/wedding-venue-algarve/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 120,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": null,
+    "setting": "A vineyard estate in the Algarve with a sculpture garden, panoramic terrace overlooking rolling vine-covered hills, a nearby cliffside chapel, and a picadeiro terrace for pre-wedding parties.",
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings can pair a ceremony at the cliffside medieval chapel of Nossa Senhora da Rocha, just a 20-minute drive away, with a vineyard reception at Quinta dos Vales."
+   },
+   "score": 0.65,
+   "confidence": 0.55,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Meets region (Portugal) and guest count (capacity 120 >= 105) and has on-site lodging confirmed. However, the page never mentions indoor backup for weather - the outdoor terrace, sculpture garden, and cliffside chapel setups suggest largely open-air venues with no stated wet-weather alternative. This must-have is unconfirmed (silent, not stated no), so it should be escalated rather than rejected. Pricing is entirely unknown, so budget fit cannot be verified either, though that alone isn't disqualifying. The vineyard/cliffside chapel setting strongly fits the intimate, coastal, natural vibe and nice-to-have of dramatic natural setting.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 120 >= 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.55 (model); evidence ceiling 0.75 (1 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 120 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.55,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Six Senses Douro Valley Wedding Venue, Northern Portugal - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/northern-portugal/six-senses-douro-valley/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 142,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "19th century manor with terraced vineyards along the Douro river in Northern Portugal",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "phone",
+    "contact_value": null,
+    "standout_detail": "Ceremony spaces range from vineyard viewpoints to elegant gardens enriched with herbs, with vows typically overlooking the river and dancing continuing under the stars."
+   },
+   "score": 0.75,
+   "confidence": 0.9,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "All three must-haves are explicitly confirmed: on-site lodging (yes), capacity up to 142 (exceeds the 105 guest count and the 85 minimum), and indoor backup (yes). Region matches Portugal. However, this is a river/vineyard setting in the Douro Valley, not coastal or beachfront, so it only partially satisfies the 'nice to have' dramatic natural setting and doesn't match the 'coastal' vibe preference. Pricing is request-only with no figures given, so budget fit cannot be verified, though this alone doesn't disqualify per rules since no stated price exceeds ceiling.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 142 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.90 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 142 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.9,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Six Senses Douro Valley - Wedding Venues in Portugal",
+    "url": "https://marrytheworld.com/venue/six-senses-douro-valley/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 250,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "Restored 19th-century manor house estate in the UNESCO-listed Douro Valley, surrounded by vineyards, woodland and river-facing terraces",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "Weddings under 80 guests can be hosted without full exclusivity (minimum 10 rooms booked), while over 80 guests requires full exclusive hire of the estate for at least 2 nights, and vineyard suites include private terraces, outdoor hot tubs and wine fridges stocked with Douro vintages."
+   },
+   "score": 0.8,
+   "confidence": 0.85,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Portugal venue satisfies all stated must-haves: on-site lodging confirmed, indoor backup confirmed, and capacity_max of 250 comfortably exceeds the 105-guest count (the standout detail even confirms groups over 80 require full exclusive hire, implying the venue readily accommodates this size). Setting is dramatic and natural (vineyard/river valley, restored manor), fitting the intimate coastal-adjacent, non-ballroom vibe, though it's a river valley rather than beachfront. Pricing is request-only with no figures given, so budget fit against the $80k ceiling cannot be confirmed \u2014 this is a luxury Six Senses property and likely runs high, but since no price was stated we cannot disqualify on cost; a human should verify pricing before booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 250 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model); evidence ceiling 0.90 (published price is in a currency we cannot compare to the budget)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 250 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "recommend"
+  },
+  {
+   "record": {
+    "name": "Sublime Comporta Wedding Venue, Alentejo - Wedinspire",
+    "url": "https://www.wedinspire.com/wedding-venues/alentejo/sublime-comporta/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": null,
+    "has_onsite_lodging": null,
+    "has_indoor_backup": null,
+    "setting": null,
+    "pricing_signal": "unknown",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "none",
+    "contact_value": null,
+    "standout_detail": null
+   },
+   "score": 0.3,
+   "confidence": 0.2,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Region (Portugal) matches, but the record has null values for capacity, on-site lodging, and indoor backup - all three must-haves are unverified rather than confirmed. Pricing is also unknown, so budget fit cannot be assessed. This venue could be a strong fit given Comporta's coastal, natural setting reputation, but the page provides no concrete evidence for any must-have. Needs human research/contact to confirm capacity for 105, guest lodging availability, and a wet-weather indoor option before this can be recommended.\n\nChecks (deterministic):\n  [?] on-site lodging for guests -- page never addresses on-site lodging\n  [?] capacity for at least 85 -- page states no capacity; need 85\n  [?] indoor backup for weather -- page never addresses an indoor weather backup\n  Confidence 0.20 (model); evidence ceiling 0.45 (3 must-have(s) unconfirmed by the page; pricing not addressed on the page)",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "unknown",
+     "evidence": "page never addresses on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "unknown",
+     "evidence": "page states no capacity; need 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "unknown",
+     "evidence": "page never addresses an indoor weather backup"
+    }
+   ],
+   "grounding_flags": [],
+   "model_confidence": 0.2,
+   "decision": "escalate"
+  },
+  {
+   "record": {
+    "name": "Sublime Comporta - Wedding Venues in Portugal",
+    "url": "https://marrytheworld.com/venue/sublime-comporta/",
+    "region": "Portugal",
+    "classification": "venue",
+    "capacity_max": 200,
+    "has_onsite_lodging": true,
+    "has_indoor_backup": true,
+    "setting": "17-hectare design-led coastal retreat on Portugal's Alentejo coast, set among pine forest, rice fields, dunes and gardens near Comporta",
+    "pricing_signal": "request_only",
+    "price_low_usd": null,
+    "price_high_usd": null,
+    "price_source_quote": null,
+    "contact_method": "form",
+    "contact_value": null,
+    "standout_detail": "From June to September, Sublime Beach Club allows couples to move the celebration to the sand with a late licence until 4am, and the estate can host a three-night takeover with welcome drinks, wedding day, recovery brunch and beach time."
+   },
+   "score": 0.85,
+   "confidence": 0.75,
+   "disqualified": false,
+   "disqualify_reason": null,
+   "rationale": "Venue explicitly confirms on-site lodging, indoor backup, and a capacity max of 200 (well above the 105 guest count), satisfying all three must-haves. Located in Portugal, one of the target regions, within the May-Aug window per the standout detail (June-Sept beach club access). Setting is a dramatic coastal/natural site (dunes, pine forest, beach club) matching the nice-to-have and vibe. Pricing is unpublished (request-only), which is typical for destination venues and does not itself disqualify, but budget fit cannot be confirmed and should be verified before booking.\n\nChecks (deterministic):\n  [+] on-site lodging for guests -- page states on-site lodging\n  [+] capacity for at least 85 -- stated capacity 200 >= 85\n  [+] indoor backup for weather -- page states an indoor/covered backup space\n  [!] ungrounded: price 60000 does not appear in its own source quote\n  [!] ungrounded: price_source_quote is not about a wedding or event\n  [!] ungrounded: price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion\n  Confidence 0.85 (model) -> 0.75, capped at 0.75: extracted claims were not supported by the page\n  Decision: escalate -- extracted claims were not supported by the page",
+   "must_have_checks": [
+    {
+     "must_have": "on-site lodging for guests",
+     "status": "met",
+     "evidence": "page states on-site lodging"
+    },
+    {
+     "must_have": "capacity for at least 85",
+     "status": "met",
+     "evidence": "stated capacity 200 >= 85"
+    },
+    {
+     "must_have": "indoor backup for weather",
+     "status": "met",
+     "evidence": "page states an indoor/covered backup space"
+    }
+   ],
+   "grounding_flags": [
+    "price 60000 does not appear in its own source quote",
+    "price_source_quote is not about a wedding or event",
+    "price is quoted in a non-USD currency; it cannot be recorded in a USD field or compared to a USD budget without conversion"
+   ],
+   "model_confidence": 0.85,
+   "decision": "escalate"
+  }
+ ],
+ "summary": {
+  "mode": "real",
+  "region_results": {
+   "Italy": 50,
+   "Greece": 50,
+   "Portugal": 50
+  },
+  "empty_regions": [],
+  "regions": 3,
+  "venues_evaluated": 50,
+  "recommended": 6,
+  "escalated": 43,
+  "duplicates_collapsed": 1,
+  "steps": 257,
+  "cost": {
+   "calls": 257,
+   "tokens_in": 398391,
+   "tokens_out": 58145,
+   "usd_total": 1.9683,
+   "by_model": {
+    "claude-haiku-4-5-20251001": {
+     "calls": 149,
+     "in": 24899,
+     "out": 4028,
+     "usd": 0.036
+    },
+    "claude-sonnet-5": {
+     "calls": 108,
+     "in": 373492,
+     "out": 54117,
+     "usd": 1.9322
+    }
+   }
+  },
+  "cost_per_venue_usd": 0.0394
+ }
+}
