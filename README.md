@@ -137,8 +137,7 @@ only the venues written there. A region with no fixture returns **zero** results
 — which is why searching six countries can evaluate three venues. That is the
 fixture set being small, not the criteria being strict.
 
-Fixtures currently exist for: `Tulum, Mexico`, `Cabo San Lucas, Mexico`,
-`Sedona, Arizona`, `Italy`, `Portugal`.
+Fixtures currently exist for: 'Italy', 'Greece', and 'Portugal'.
 
 ### Going live
 
